@@ -1,0 +1,60 @@
+.dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    .toasting-notification {
+        min-width: 298px;
+        height: 40px;
+        position: absolute;
+        top: -15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 6px;
+        border: 1px solid #19B3B5;
+        background: #19B3B5;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+
+        span {
+            color: #FFF;
+            text-align: center;
+            font-family: "Circular Std";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            /* 25.2px */
+        }
+    }
+
+    .wraper {
+        width: 100%;
+        max-width: 1488px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+
+        .queueCards {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .availbleDoctorsCardWraper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         
+
+        }
+    }
+}

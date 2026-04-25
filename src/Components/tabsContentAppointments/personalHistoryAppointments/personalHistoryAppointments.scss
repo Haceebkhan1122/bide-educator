@@ -1,0 +1,276 @@
+.personalHistoryAppointments {
+    width: 100%;
+    max-width: 1488px;
+    height: 559px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+    padding-bottom: 43px;
+    padding-left: 0px;
+    padding-right: 35px;
+    gap: 23px;
+    position: relative;
+    margin: auto;
+
+    .ErrorState {
+        color: #bc0001;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .toasting-Error {
+        min-width: 298px;
+        height: 40px;
+        position: absolute;
+        top: -15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 6px;
+        border: 1px solid #B22222;
+        background: #CC3333;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: #FFFFFF;
+            text-align: center;
+            font-family: "Circular Std";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            /* 25.2px */
+        }
+    }
+
+    .toasting-notification {
+        min-width: 298px;
+        height: 40px;
+        position: absolute;
+        top: -15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 6px;
+        border: 1px solid #19B3B5;
+        background: #19B3B5;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: #FFF;
+            text-align: center;
+            font-family: "Circular Std";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            /* 25.2px */
+        }
+    }
+
+    form {
+        .wraperForm {
+            width: 100%;
+            max-width: 1062px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: start;
+            // gap: 30px;
+
+            .single {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                align-items: start;
+                padding: 0 24px;
+                margin-bottom: 30px;
+
+                &:nth-child(3),
+                &:nth-child(6),
+                &:nth-child(9) {
+                    padding-right: 0;
+                }
+
+                label {
+                    color: #535151;
+                    font-family: "Circular Std";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 450;
+                    line-height: normal;
+                }
+
+                .input__fields_personal,
+                .life-style-wraper {
+                    border-radius: 6.605px;
+                    background: initial !important;
+                    border: 0.5px solid #959494 !important;
+                }
+
+                .life-style-wraper {
+                    width: 306px;
+                    height: 43px;
+                    flex-shrink: 0;
+                    border-radius: 6.605px;
+                    border: 0.5px solid #959494;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 14.71px;
+                    gap: 81.29px;
+
+                    .life-single {
+                        display: flex;
+                        gap: 12px;
+                        align-items: center;
+
+                        input {
+                            width: 15px;
+                            height: 15px;
+                        }
+
+                        label {
+                            color: #313131;
+                            font-family: "Circular Std";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                .yesWraper {
+                    width: 306px;
+                    height: 43px;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .checks-single-wraper {
+                        display: flex;
+                        width: 154px;
+                        height: 43px;
+                        padding: 8.807px 15.413px;
+                        align-items: center;
+                        gap: 11.009px;
+                        border-radius: 22.018px;
+                        border: 0.5px solid #959494;
+
+                        .yes-single {
+                            display: flex;
+                            gap: 12px;
+                            align-items: center;
+
+                            label {
+                                color: var(--Neutral-10, #12161C);
+                                font-family: Nunito;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 22.018px;
+                                /* 137.612% */
+                                letter-spacing: -0.32px;
+                                text-transform: capitalize;
+                            }
+
+                            input {
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    }
+
+                    .rect-inpt {
+                        width: 140px;
+                        height: 43px;
+                        flex-shrink: 0;
+                        border-radius: 6.794px;
+                        background:rgb(242 242 242 / 33%);
+                        padding-left: 10.65px;
+                        outline: none;
+                        border: none;
+                        color: #313131;
+                        font-family: "Circular Std";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                    .rect-inptDisabled {
+                        width: 140px;
+                        height: 43px;
+                        flex-shrink: 0;
+                        border-radius: 6.794px;
+                        background: rgb(143, 143, 143, 0.33);
+                        padding-left: 10.65px;
+                        outline: none;
+                        border: none;
+                        color: #313131;
+                        font-family: "Circular Std";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                }
+
+                input {
+                    padding-left: 7px;
+                }
+            }
+        }
+    }
+
+    .continueBtn {
+        width: 177px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #29BCC1;
+        color: #FFF;
+        text-align: center;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        display: flex;
+        align-self: flex-end;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 72px;
+    }
+
+    .continueBtn1 {
+        width: 177px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #29BCC1;
+        color: #FFF;
+        text-align: center;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        display: flex;
+        align-self: flex-end;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 72px;
+        right: 220px;
+    }
+}

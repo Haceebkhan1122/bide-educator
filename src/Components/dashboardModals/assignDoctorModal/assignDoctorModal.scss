@@ -1,0 +1,304 @@
+.assignDoctorModal {
+    .modal-dialog {
+        max-width: 700px;
+
+        .modal-content {
+            height: auto !important;
+        }
+    }
+}
+
+.assignDoctorModalBody.withData {
+    width: 100%;
+    padding: 0;
+
+    .withResults {
+        .toasting-notification {
+            min-width: 298px;
+            height: 40px;
+            position: absolute;
+            top: 5px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: 6px;
+            border: 1px solid #19B3B5;
+            background: #19B3B5;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+
+            span {
+                color: #FFF;
+                text-align: center;
+                font-family: "Circular Std";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                /* 25.2px */
+            }
+        }
+
+        .wraperInfo {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            padding-left: 0px;
+            padding-top: 39px;
+            padding-right: 0px;
+            padding-bottom: 36.57px;
+
+
+            h2 {
+                color: #313131;
+                font-family: Nunito;
+                font-size: 28.731px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                .cross_icon_modal {
+                    width: 20px;
+                    height: 20px;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M12.5881 11.5506L20.7582 19.7207L19 21.4789L10.8299 13.3088L10.6567 13.1356L10.4836 13.3088L2.31346 21.4789L0.555282 19.7207L8.72542 11.5506L8.89857 11.3774L8.72542 11.2043L0.555282 3.03416L2.31346 1.27599L10.4836 9.44612L10.6567 9.61927L10.8299 9.44612L19 1.27599L20.7582 3.03416L12.5881 11.2043L12.4149 11.3774L12.5881 11.5506Z' fill='%23313131' stroke='white' stroke-width='0.489739'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                    top: -10px;
+                    right: 20px;
+                    cursor: pointer;
+                }
+
+            }
+
+            .fixHeight {
+                max-height: 167px;
+                overflow-y: auto;
+                padding-right: 30px !important;
+
+                &::-webkit-scrollbar {
+                    width: 6.53px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    border-radius: 15.672px;
+                    background-color: #EEEEEE;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 15.672px;
+
+                    background-color: #95949477;
+
+                }
+
+                .table-data-assign {
+                    width: 100%;
+                    // height: 150px;
+
+                    .assigneDoctorCount {
+                        color: #313131;
+                    }
+
+
+                    thead {
+                        width: 100%;
+                        height: 37px;
+                        position: -webkit-sticky;
+                        position: sticky;
+                        top: 0;
+                        background: #ffffff !important;
+                        z-index: 999;
+
+
+
+                        th {
+                            min-width: 33%;
+                            // padding-left: 23px;
+                            color: #313131;
+                            font-family: "Circular Std";
+                            font-size: 18.284px;
+                            font-style: normal;
+                            font-weight: 450;
+                            line-height: normal;
+                            white-space: nowrap;
+
+                            &:nth-child(2) {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+
+                    tbody {
+                        position: relative;
+                        top: 10px;
+
+                        .pe0 {
+                            padding-right: 0 !important;
+                        }
+
+                        .ps0 {
+                            padding-left: 0 !important;
+                        }
+
+                        .noDividerTd {
+                            border-right: 0px;
+
+                            input {
+                                width: 16px;
+                                height: 16px;
+                            }
+
+                            button {
+                                display: flex;
+                                width: 78.358px;
+                                padding: 3.53px 6.178px;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 4.413px;
+                                border-radius: 3.53px;
+                                background: #E1F3F4;
+                                color: #19B3B5;
+                                font-family: Nunito;
+                                font-size: 10.003px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                text-transform: uppercase;
+                                margin-left: auto;
+                            }
+
+                            .redBtn {
+                                border-radius: 3.53px;
+                                background: rgba(239, 98, 134, 0.20);
+                                color: #EF6286;
+                            }
+                        }
+
+                        tr {
+
+
+
+                            td {
+                                color: #313131;
+                                font-family: "Circular Std";
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+                                white-space: nowrap;
+                                padding: 6px 0.5rem !important;
+                                vertical-align: middle;
+                                border-right: 1px solid rgba(49, 49, 49, 0.30);
+
+                                &:first-child {
+                                    padding-left: 0;
+                                    font-size: 20px;
+                                    padding-right: 0;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .ErrorState {
+                color: #bc0001;
+                font-weight: 500;
+                font-size: 14px;
+                margin-left: 10px;
+            }
+
+            .assignBtn {
+                width: 231.157px;
+                height: 62.687px;
+                flex-shrink: 0;
+                border-radius: 13.06px;
+                background: #29BCC1;
+                color: #FFF;
+                text-align: center;
+                font-family: Nunito;
+                font-size: 23.507px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 1.175px;
+                margin: auto;
+                margin-top: 28px !important;
+            }
+        }
+        .assignBtnDisabled {
+            width: 231.157px;
+            height: 62.687px;
+            flex-shrink: 0;
+            border-radius: 13.06px;
+            background-color: #f0f0f0;
+            color: #a9a9a9;
+            text-align: center;
+            font-family: Nunito;
+            font-size: 23.507px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 1.175px;
+            margin: auto;
+            margin-top: 28px !important;
+        }
+    }
+}
+
+.assignDoctorModalBody.withNodata {
+    height: 232px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0 !important;
+    text-align: center;
+
+    .cross_icon_modal {
+
+        width: 20px;
+        height: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M12.5881 11.5506L20.7582 19.7207L19 21.4789L10.8299 13.3088L10.6567 13.1356L10.4836 13.3088L2.31346 21.4789L0.555282 19.7207L8.72542 11.5506L8.89857 11.3774L8.72542 11.2043L0.555282 3.03416L2.31346 1.27599L10.4836 9.44612L10.6567 9.61927L10.8299 9.44612L19 1.27599L20.7582 3.03416L12.5881 11.2043L12.4149 11.3774L12.5881 11.5506Z' fill='%23313131' stroke='white' stroke-width='0.489739'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    h2 {
+        color: #535151;
+        font-family: "Circular Std";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+    }
+
+    .assignBtn {
+        border-radius: 10px;
+        background: #29BCC1;
+        color: #FFF;
+        text-align: center;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        width: 275px;
+        height: 48px;
+        flex-shrink: 0;
+        margin-top: 28px;
+    }
+}

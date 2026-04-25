@@ -1,0 +1,142 @@
+.top-right {
+             
+ 
+
+    button {
+        width: 97px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #29BCC1;
+        color: #FFF;
+        text-align: center;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.9px;
+    }
+} 
+.vitalsEducator { 
+    padding-bottom: 43px;
+     
+    position: relative;
+    display: flex;
+    gap: 24px;
+
+    
+
+    .right {
+        width: 100%;
+        height: 519px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 0;
+        overflow-y: scroll;
+        &::-webkit-scrollbar-track
+            {
+                border-radius: 6px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar
+            {
+                width: 6px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar-thumb
+            {
+                border-radius: 6px;
+                background-color: #19B3B5;
+            }
+      
+
+        .bottom-right {
+
+            .continue__btn.w32 {
+                width: 326px;
+                height: 48px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #29BCC1;
+                position: absolute;
+                bottom: 48px;
+                right: 28px;
+                color: #FFF;
+                text-align: center;
+                font-family: Nunito;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.9px;
+            }
+            .table-diabities{
+                thead{
+                    tr{
+                      th{font-family: Circular Std;
+                        font-size: 18px;
+                        font-weight: 450;
+                        line-height: 23px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        color:#19B3B5;}
+                    }
+                }
+                tbody{
+                    tr{
+                        td{color: #313131;
+                            text-align: center;
+                            font-family: "Circular Std";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            vertical-align: middle;
+                            padding: 18px 0;
+                        .print{ 
+                            width: 65px;
+                            height: 31.25px;
+                            padding: 0 12.308px; 
+                            flex-shrink: 0;
+                            border-radius: 9.231px;
+                            border: 1.25px solid #19B3B5;
+                            color: #19B3B5;
+                            text-align: center;
+                            font-family: "Circular Std";
+                            font-size: 12.5px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            margin-right: 18px;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.vitalsEducator.vitalScroll .table-responsive::-webkit-scrollbar {
+    width: 0em;
+  }
+  .vitalsEducator.vitalScroll .table-responsive {
+      overflow: auto;
+      height: 510px;
+  }
+  .vitalsEducator.vitalScroll .table-responsive table thead th{background:#fff;     position: sticky;
+    top: 0;}

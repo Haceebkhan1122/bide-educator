@@ -1,0 +1,285 @@
+.repotViewModal {
+    padding-left: 0 !important;
+    .modal-dialog{
+        max-width: 1391px;
+        .modal-content{
+            border-radius: 15.38px;
+        }
+        .modal-header {
+            border: none;
+        }
+        .modal-body{
+            padding: 0 30px 23px;
+            .wraperInfo {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+                padding-bottom: 20px;
+        
+                h2 {
+                    color: #313131;
+                    font-family: "Circular Std";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 450;
+                    line-height: normal;
+                }
+            }
+        
+            .main-wraping {
+                width: 100%;
+        
+                .left {
+                    width: 718px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 27px;
+        
+                    .top {
+                        display: flex;
+                        align-items: center;
+                        gap: 21px;
+        
+                        .single {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            gap: 8px;
+        
+                            label {
+                                color: #000;
+                                font-family: "Circular Std";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 450;
+                                line-height: normal;
+                            }
+        
+                            .dateInp {
+                                width: 147px;
+                                height: 43px;
+                                border-radius: 6px;
+                                border: 0.3px solid #959494;
+                                padding-left: 13.59px;
+                                padding-right: 13.59px;
+                                .ant-picker-input{
+                                    input{
+                                    margin-left: 0;
+                                    color: #959494;
+                                    font-family: "Circular Std";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: normal;
+                                    }
+                                }
+                            }
+        
+                            .labInp {
+                                display: flex;
+                                width: 548px;
+                                height: 43px;
+                                padding: 6.794px 13.588px;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 8.492px;
+                                border-radius: 6px;
+                                border: 0.3px solid #959494;
+                                padding-left: 13.59px;
+                                font-size: 16px;
+                                font-family: "Circular Std";
+                                font-weight: 300;
+                            }
+                        }
+                    }
+        
+                    .bottom {
+                        width: 100%;
+                        .singling {
+                            .accordion-item {
+                                border: none;
+                                margin-bottom: 20px;
+                                .accordion-body {
+                                    padding: 0;
+                                }
+                                .accordion-button {
+                                    padding: 0;
+                                }
+                            }
+        
+                            .wraping {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+        
+                                h3 {
+                                    color: #000;
+                                    font-family: "Circular Std";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 450;
+                                    line-height: normal;
+                                }
+        
+                                .plusIcon {
+                                    width: 16px;
+                                    height: 16px;
+                                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M7.33333 11.3333H8.66667V8.66667H11.3333V7.33333H8.66667V4.66667H7.33333V7.33333H4.66667V8.66667H7.33333V11.3333ZM3.33333 14C2.96667 14 2.65278 13.8694 2.39167 13.6083C2.13056 13.3472 2 13.0333 2 12.6667V3.33333C2 2.96667 2.13056 2.65278 2.39167 2.39167C2.65278 2.13056 2.96667 2 3.33333 2H12.6667C13.0333 2 13.3472 2.13056 13.6083 2.39167C13.8694 2.65278 14 2.96667 14 3.33333V12.6667C14 13.0333 13.8694 13.3472 13.6083 13.6083C13.3472 13.8694 13.0333 14 12.6667 14H3.33333ZM3.33333 12.6667H12.6667V3.33333H3.33333V12.6667Z' fill='%2319B3B5'/%3E%3C/svg%3E");
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: center;
+                                }
+                            }
+        
+                            .inputFieldNum {
+                                display: flex;
+                                width: 100%;
+                                height: 47px;
+                                padding: 6.794px 13.588px;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 8.492px;
+                                border-radius: 6px;
+                                border: 0.3px solid #959494;
+                                color: var(--Black-4, #5E6366);
+                                font-family: "Circular Std";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+        
+                                &::placeholder {
+                                    color: var(--Black-4, #5E6366);
+                                    font-family: "Circular Std";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+        
+                .right {
+                    .single {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 8px;
+        
+                        label {
+                            color: #000;
+                            font-family: "Circular Std";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 450;
+                            line-height: normal;
+                        }
+        
+                        textarea {
+                            display: flex;
+                            width: 523px;
+                            height: 406px;
+                            padding: 5px 14px;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 8.492px;
+                            flex-shrink: 0;
+                            border-radius: 6px;
+                            border: 0.3px solid #959494;
+                            outline: none;
+        
+                            &::placeholder {
+                                color: var(--Black-4, #5E6366);
+                                font-family: "Circular Std";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+                            }
+        
+                        }
+                    }
+                }
+            }
+        }
+        .modal-footer {
+            box-shadow: 0px -4px 20px 0px #D8DAE233;
+            border: none;
+            .btnsWraping {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+        
+                .cancelBtn {
+                    width: 283px;
+                    height: 48px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    background: #D9D9D9;
+                    color: #959494;
+                    text-align: center;
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+        
+                .btn_wrape {
+                    width: 283px;
+                    height: 48px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    background: #29BCC1;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+        
+                    button {
+                        width: 283px;
+                        height: 100%;
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Nunito;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
+                        letter-spacing: 0.9px;
+                    }
+        
+                    .arrow_wrape {
+                        width: 48px;
+                        height: 100%;
+                        flex-shrink: 0;
+                        border-radius: 0px 10px 10px 0px;
+                        background: #078A8E;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+        
+                        .arrow {
+                            width: 10.866px;
+                            height: 10.395px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-picker-dropdown {
+    z-index: 99999;
+}

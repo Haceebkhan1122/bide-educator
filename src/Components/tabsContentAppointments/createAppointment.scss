@@ -1,0 +1,83 @@
+.create-appointment {
+    width: 100%;
+    padding-left: 13px;
+
+    .toasting-notification2 {
+        min-width: 298px;
+        width: 398px;
+        height: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        display: flex;
+        gap: 10px;
+        border-radius: 6px;
+        border: 1px solid #19B3B5;
+        background: #19B3B5;
+        justify-content: center;
+        align-items: center;
+        // top: 255px;
+        transition: all 0.3s ease-in-out;
+
+        span {
+            color: #FFF;
+            text-align: center;
+            font-family: "Circular Std";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            /* 25.2px */
+        }
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        margin-bottom: 28px;
+
+        .back-arrow {
+            width: 35px;
+            height: 35px;
+        }
+
+        h3 {
+            color: #313131;
+            font-family: Nunito;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 0px !important;
+        }
+    }
+
+
+    .tabs_top_appointment {
+        display: flex;
+        gap: 17px;
+        align-items: center;
+        margin-bottom: 28px;
+        border-bottom: none; 
+        white-space: nowrap;
+
+    }
+
+    .divider {
+        width: 90%;
+        height: 0.3px;
+        background: #313131;
+        margin-top: 28px;
+        margin-bottom: 25px !important;
+
+        &.diabitiesHr {
+            width: 97.6%;
+        }
+    }
+}
+
+.labing_hr {
+    width: 98% !important;
+}

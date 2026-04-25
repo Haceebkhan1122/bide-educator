@@ -1,0 +1,136 @@
+.pateint-profile {
+    width: 100%;
+    position: relative;
+
+    .toasting-notification {
+        min-width: 298px;
+        width: 298px;
+        height: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: fixed;
+        top: 58px;
+        display: flex;
+        gap: 10px;
+        border-radius: 6px;
+        border: 1px solid #19B3B5;
+        background: #19B3B5;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.6s ease-in-out;
+        z-index: 9999;
+
+
+        span {
+            color: #FFF;
+            text-align: center;
+            font-family: "Circular Std";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            /* 25.2px */
+        }
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        margin-bottom: 28px;
+        padding-left: 23px;
+
+
+        .back-arrow {
+            width: 35px;
+            height: 35px;
+        }
+
+        h3 {
+            color: #313131;
+            font-family: Nunito;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 0px !important;
+        }
+    }
+
+
+    .tabs_top_appointment {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 28px;
+        border-bottom: none;
+        padding-left: 0;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    .divider {
+        width: 100%;
+        height: 0.3px;
+        background: #313131;
+        margin-top: 28px;
+        margin-bottom: 25px !important;
+        margin-left: 0 !important;
+        margin: auto;
+    }
+
+    .sidebar {
+        border-radius: 12px;
+        background-color: #fff;
+        padding: 30px 0 25px 27px;
+        height: 100%;
+        width: 100%;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #313131;
+            line-height: 24.55px;
+            margin-bottom: 25px;
+        }
+
+        .sidebar-detail {
+            height: 540px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                width: 7px;
+                border-radius: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #EEEEEE;
+                border-radius: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #95949466;
+                border-radius: 8px;
+            }
+
+            h5 {
+                font-size: 16px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                line-height: 22.58px;
+                color: #313131;
+                font-family: "Circular Std";
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 450;
+                line-height: 20.24px;
+                color: #313131;
+                font-family: "Circular Std";
+            }
+        }
+    }
+}

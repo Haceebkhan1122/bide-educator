@@ -1,0 +1,415 @@
+.diaaa_wrapp {
+    width: 100%;
+    padding-right: 37px;
+
+    .diabitiesHistoryAppointments {
+        display: flex;
+        // padding-top: 36px;
+        padding-bottom: 43px;
+        position: relative;
+        gap: 24px;
+
+        .left {
+            width: 100%;
+            // max-width: 732px;
+            height: 578px;
+            border-radius: 12px;
+            background: #FFF;
+            gap: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 23px;
+
+            .single__types {
+                width: 100%;
+                max-width: 684px;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+
+                h3 {
+                    color: #535151;
+                    font-family: "Circular Std";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 450;
+                    line-height: normal;
+                }
+
+                .wraper-checks {
+                    display: flex;
+                    width: 100%;
+                    min-height: 43px;
+                    padding: 0px 14px;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 20px;
+                    border: 1px solid var(--Neutral-80, #BBC5D3);
+
+                    @media (max-width : 1280px) {
+                        flex-wrap: wrap;
+                    }
+
+                    .single_check {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        white-space: nowrap;
+                        gap: 12px;
+
+                        @media (max-width : 1280px) {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+
+            .single {
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+
+                &.dd {
+                    width: 100%;
+                    max-width: 684px;
+                }
+
+                .datePicker01 {
+                    border-radius: 6px;
+                    border: 1px solid #959494;
+                    width: 173px;
+                    height: 43px;
+                    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' width='20' height='14'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z' fill='%23D9D9D9' /%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-position: 94% center;
+
+                    span.ant-picker-suffix {
+                        display: none !important;
+                    }
+
+                    input {
+                        font-family: Circular Std;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 23px;
+                        letter-spacing: 0em;
+                        text-align: left;
+
+                        &::placeholder {
+                            color: #313131;
+                        }
+                    }
+
+                    &:after {
+                        // font-family: "Font Awesome 5 Free";
+                        // content: "\f095";
+                        // display: inline-block;
+                        // padding-right: 3px;
+                        // vertical-align: middle;
+                        // font-weight: 900;
+                    }
+                }
+
+                h3 {
+                    color: #535151;
+                    font-family: "Circular Std";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 450;
+                    line-height: normal;
+                }
+
+                .date_inpt {
+                    width: 173px;
+                    height: 43px;
+                    border-radius: 6.605px;
+                    border: 0.5px solid #959494;
+                }
+            }
+
+            .wraper-dialog {
+                width: 100%;
+                max-width: 684px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+
+                .first-top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h3 {
+                        color: #535151;
+                        font-family: "Circular Std";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 450;
+                        line-height: normal;
+                    }
+
+                    .checks-single-wraper {
+                        display: flex;
+                        width: 154px;
+                        height: 43px;
+                        padding: 8.807px 15.413px;
+                        align-items: center;
+                        gap: 11.009px;
+                        border-radius: 22.018px;
+                        border: 0.5px solid #959494;
+                        margin-bottom: 6px;
+
+                        .yes-single {
+                            display: flex;
+                            gap: 12px;
+                            align-items: center;
+
+                            label {
+                                color: var(--Neutral-10, #12161C);
+                                font-family: Nunito;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 22.018px;
+                                letter-spacing: -0.32px;
+                                text-transform: capitalize;
+                            }
+
+                            input {
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 61px;
+                    flex-shrink: 0;
+                    border-radius: 6.605px;
+                    border: 0.5px solid #959494;
+                    padding-left: 10px;
+                    padding-top: 9px;
+                    color: #313131;
+                    font-family: "Circular Std";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    outline: none;
+                    resize: none;
+
+                    &::placeholder {
+                        color: #313131;
+                        font-family: "Circular Std";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                }
+
+                .chrLimit {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    color: #313131;
+                    font-family: "Circular Std";
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+                .ErrorState {
+                    color: #bc0001;
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+
+        }
+
+        .right {
+            width: 100%;
+            // max-width: 732px;
+            height: 578px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            background: #FFF;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-top: 24px;
+
+
+            .top-right {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 29px;
+                padding-right: 23px;
+                margin-bottom: 34px;
+
+                h3 {
+                    color: #313131;
+                    font-family: "Circular Std";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 450;
+                    line-height: normal;
+                }
+
+                button {
+                    width: 97px;
+                    height: 40px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    background: #29BCC1;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+            }
+
+            .bottom-right {
+
+                .table-responsive {
+                    overflow: scroll;
+                    height: 360px;
+
+                    &::-webkit-scrollbar-track {
+                        border-radius: 0;
+                        background-color: #D9D9D9;
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                        background-color: #D9D9D9;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        border-radius: 6px;
+                        background-color: #95949466;
+                    }
+
+                    &::-webkit-scrollbar:horizontal {
+                        height: 6px;
+                    }
+                }
+
+                .buttonGroupSmbg {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-top: 2.5rem;
+                    margin-right: 1rem;
+                }
+
+                .continue__btn {
+                    width: 177px;
+                    height: 48px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    background: #29BCC1;
+                    // position: absolute;
+                    // bottom: 48px;
+                    // right: 28px;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+
+                .continue__btnUpdate {
+                    width: 177px;
+                    height: 48px;
+                    flex-shrink: 0;
+                    border-radius: 12px;
+                    background: #FFF;
+                    // position: absolute;
+                    // bottom: 48px;
+                    // right: 28px;
+                    margin-right: 1.2rem;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #959494;
+                    border: 0.4px solid #959494;
+                    text-align: center;
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 0.9px;
+                }
+
+                .table-diabities {
+                    thead {
+                        tr {
+                            th {
+                                font-family: Circular Std;
+                                font-size: 18px;
+                                font-weight: 450;
+                                line-height: 23px;
+                                letter-spacing: 0em;
+                                text-align: center;
+                                color: #19B3B5;
+                                position: sticky;
+                                top: 0;
+                                background-color: white;
+                                padding-top: 0;
+                                padding-left: 32px;
+                                padding-right: 32px;
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            td {
+                                color: #313131;
+                                text-align: center;
+                                font-family: "Circular Std";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+
+                                .print {
+                                    width: 65px;
+                                    height: 31.25px;
+                                    padding: 0 12.308px;
+                                    flex-shrink: 0;
+                                    border-radius: 9.231px;
+                                    border: 1.25px solid #19B3B5;
+                                    color: #19B3B5;
+                                    text-align: center;
+                                    font-family: "Circular Std";
+                                    font-size: 12.5px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    margin-right: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

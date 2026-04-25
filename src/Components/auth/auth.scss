@@ -1,0 +1,174 @@
+.auth {
+    width: 100%;
+    height: calc(100vh - 77px);
+    background: rgba(195, 231, 232, 0.80);
+    display: flex;
+    overflow: hidden; 
+    .left {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            width: 524px;
+            height: 525px;
+            object-fit: cover;
+        }
+    } 
+    
+    .right {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        padding-top: 121px;
+    } 
+}
+
+.emailSignIn {
+    .card {
+        width: 544px;
+        height: 317px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    
+        h1 {
+            color: #19B3B5;
+            text-align: center;
+            font-family: 'nunito';
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 45px;
+            /* 150% */
+        }
+    
+        .single {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 40px;
+    
+            label {
+                color: #959494;
+                font-family: "Circular Std";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+    
+            .errorState{
+                color: #BC0001;
+                font-family: "Circular Std";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                padding-left: 12px;
+            }
+            .errorBorder{
+                border: 0.5px solid #BC0001 !important;
+                color: #BC0001 !important;
+            }
+
+            .valid {
+                width: 493px;
+                height: 48px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                border: 0.5px solid #959494;
+                background: #FFF;
+                font-family: "Circular Std";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                padding: 0px 25px;
+    
+                &.invalid {
+                    border: 0.5px solid #BC0001;
+    
+                    &::placeholder {
+                        color: #BC0001;
+                    }
+                }
+    
+    
+                &::placeholder {
+                    color: #959494;
+                    font-family: "Circular Std";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+    
+            .error {
+                color: #B11B1B;
+                font-family: "Circular Std";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: 140%;
+                /* 18.2px */
+                letter-spacing: 0.13px;
+            }
+    
+        }
+    
+        .btn_wrape {
+            width: 493px;
+            height: 53px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: #29BCC1;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+    
+            button {
+                width: 440px;
+                height: 100%;
+                color: #FFF;
+                text-align: center;
+                font-family: Nunito;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.9px;
+            }
+    
+            .arrow_wrape {
+                width: 53px;
+                height: 100%;
+                flex-shrink: 0;
+    
+                border-radius: 0px 10px 10px 0px;
+                background: #078A8E;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .arrow {
+                    width: 16px;
+                    height: 16px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

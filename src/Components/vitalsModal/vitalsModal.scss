@@ -1,0 +1,154 @@
+.showSmbgModalBody.vitalsModalBody {
+    position: relative;
+    .top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+
+        h3 {
+            color: #313131;
+            font-family: "Circular Std";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: normal;
+            padding-top: 39px;
+            margin-left: 30px;
+        }
+
+        .cross_icon_modal {
+            width: 16px;
+            height: 14px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='14' viewBox='0 0 16 14' fill='none'%3E%3Cpath d='M9.48796 7.14111L15.7153 12.59L14.3886 13.7509L8.12347 8.26889L8 8.16086L7.87653 8.26889L1.61143 13.7509L0.284736 12.59L6.51204 7.14111L6.67331 7L6.51204 6.85889L0.284736 1.41L1.61143 0.249144L7.87653 5.73111L8 5.83914L8.12347 5.73111L14.3886 0.249144L15.7153 1.41L9.48796 6.85889L9.32669 7L9.48796 7.14111Z' fill='%23313131' stroke='white' stroke-width='0.375'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-self: flex-end;
+            cursor: pointer;
+            position: absolute;
+            right: 25px;
+            top: 30px;
+        }
+    }
+
+    .wraperInfo_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 53px;
+
+        .wrape-bar {
+            width: 100%;
+            max-width: 485px;
+            display: flex;
+            gap: 22px;
+
+            .single {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                .ErrorState{
+                    color: #bc0001;
+                    font-weight: 500;
+                    font-size: 11px;
+                    margin-top: 5px;
+                }
+
+                label {
+                    color: #000;
+                    font-family: "Circular Std";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 450;
+                    line-height: normal;
+                }
+
+                input {
+                    display: flex;
+                    width: 147px;
+                    height: 43px;
+                    padding: 6.794px 13.588px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 8.492px;
+
+                    border-radius: 6px;
+                    border: 0.3px solid #959494;
+                }
+            }
+        }
+    }
+
+    .btnsWraping {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .cancelBtn {
+            width: 240.55px;
+            height: 40.8px;
+            flex-shrink: 0;
+
+            border-radius: 8.5px;
+            background: #D9D9D9;
+            color: #959494;
+            text-align: center;
+            font-family: Nunito;
+            font-size: 15.3px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.765px;
+        }
+
+        .btn_wrape {
+            width: 240.55px;
+            height: 40.8px;
+            flex-shrink: 0;
+
+            border-radius: 8.5px;
+            background: #29BCC1;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            button {
+                width: 240.55px;
+                height: 100%;
+                color: #FFF;
+                text-align: center;
+                font-family: Nunito;
+                font-size: 15.3px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.765px;
+            }
+
+            .arrow_wrape {
+                width: 40.8px;
+                height: 100%;
+                flex-shrink: 0;
+                border-radius: 0px 10px 10px 0px;
+                background: #078A8E;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .arrow {
+                    width: 21.866px!important;
+                    height: 13.395px!important;
+                    object-fit: contain!important;
+                }
+            }
+        }
+    }
+}

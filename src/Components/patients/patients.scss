@@ -1,0 +1,112 @@
+.patients {
+    width: 100%;
+    max-width: 1488px;
+    height: 717px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    margin: auto;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    position: relative;
+
+    .actionBtn {
+        border-radius: 9.231px;
+        border: 1.25px solid #19B3B5;
+        background-color: #fff;
+        color: #19B3B5;
+        text-align: center;
+        font-family: "Circular Std";
+        font-size: 12.5px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 13.077px 12.308px;
+        width: 65px;
+    }
+
+    h2 {
+        color: #313131;
+        font-family: Nunito;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-left: 22px;
+        margin-bottom: 0px !important;
+    }
+
+    input {
+        width: 456px;
+        height: 37px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 0.3px solid #959494;
+        padding-left: 14px;
+        padding-right: 14px;
+        color: #313131;
+        font-family: "Circular Std";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-left: 22px;
+
+        &::placeholder {
+            color: #313131;
+            font-family: "Circular Std";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    .table-wraper-patients {
+
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        &::-webkit-scrollbar-track {
+            border-radius: 5px;
+            background-color: #EEEEEE;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #95949466;
+        }
+    }
+}
+
+.patient-view-btn {
+    display: flex;
+    width: 65px;
+    height: 31.25px;
+    padding: 13.077px 12.308px;
+    justify-content: center;
+    align-items: center;
+    gap: 7.692px;
+    flex-shrink: 0;
+    border-radius: 9.231px;
+    border: 1.25px solid #19B3B5;
+    color: #19B3B5;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.years-text {
+    color: #313131;
+font-family: "Circular Std";
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+}

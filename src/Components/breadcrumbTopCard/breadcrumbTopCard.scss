@@ -1,0 +1,36 @@
+.BreadcrumbTopCard {
+    width: 100%;
+    max-width: 1488px;
+    height: 71px;
+    border-radius: 12px;
+    // background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 38px;
+    padding-right: 29px;
+
+
+    h3 {
+        color: #313131;
+        font-family: "Circular Std";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    button {
+        width: 160px;
+        height: 36px;
+        color: #FFF;
+        font-family: Nunito;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        border-radius: 8px;
+        background: #29BCC1;
+    }
+}

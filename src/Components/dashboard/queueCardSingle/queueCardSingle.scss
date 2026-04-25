@@ -1,0 +1,350 @@
+.queueCardSingle {
+    width: 480px;
+    height: 315px;
+    // overflow-y: scroll;
+    // flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: start;
+    // gap: 15.5px;
+    padding-left: 20px;
+    padding-top: 22px;
+    padding-right:8px;
+    padding-bottom: 36.5px;
+    position: relative;
+    .boxScrollNew {
+        height: 100%;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15.5px;
+        // overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background: #95949433;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: #95949466;
+            border-radius: 9px;
+        }
+    }
+
+   
+
+    h3 {
+        color: #19B3B5;
+        font-family: "Circular Std";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+    }
+
+    .headingWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .queueHeading{
+        color: #545554;
+
+        font-family: "Circular Std";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal; 
+    }
+    .wrapeAllInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        // overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background: #95949433;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: #95949466;
+            border-radius: 9px;
+        }
+
+        .info {
+            width: 100%;
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+
+            ul.dashboardList {
+                position: relative;
+                padding-left: 20px;
+
+                &::before {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    position: absolute;
+                    left: 5px;
+                    top: 3px;
+                    border-left: 1px dashed #BDBDBD;
+                }
+
+                li {
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        width: 12px;
+                        height: 12px;
+                        background: #bc0001;
+                        position: absolute;
+                        top: 2px;
+                        border: 3px solid #fff;
+                        left: -20px;
+                        border-radius: 50%;
+                    }
+
+                    &:first-child:before {
+                        background: #19B3B5;
+                    }
+
+                    .left {
+                        width: 98%;
+                        display: flex;
+                        gap: 11px;
+                        padding: 8px 8px 0 8px;
+                        margin-bottom: 1rem;
+                        border-radius: 10px;
+                        border: 0.5px solid rgba(149, 148, 148, 0.30);
+
+                        background: #FFF;
+
+                        .stepper-line {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            justify-content: start;
+                            gap: 5px;
+
+                            .dot {
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                background-color: teal;
+                            }
+
+                            .line {
+                                margin: auto;
+                                height: 171px;
+                            }
+                        }
+
+                        .moreDetails {
+                            width: 100%;
+                            // margin-bottom: 18px;
+                            position: relative;
+                        }
+
+                        .first__info {
+                            width: 100%;
+                            // display: flex;
+                            // align-items: center;
+                            // justify-content: space-between;
+                            margin-bottom: 12px;
+
+                            .firsting {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                justify-content: start;
+
+                                .zero_one {
+                                    color: #626263;
+                                    font-family: "Circular Std";
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: normal;
+                                    // word-spacing: -4px;
+
+
+                                }
+
+                                .EducatorHead {
+                                    color: #535151;
+
+                                    font-family: "Circular Std";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 450;
+                                    line-height: normal;
+                                }
+
+                                .EducatorName {
+                                    color: #535151;
+                                    font-family: "Circular Std";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: normal;
+                                }
+
+                                .bolding {
+                                    color: #626263;
+                                    text-align: right;
+                                    font-family: "Circular Std";
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: normal;
+                                }
+
+                                .name {
+                                    color: #000;
+                                    font-family: "Circular Std";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: 20px;
+
+                                    // span {
+                                    //     font-weight: 450;
+                                    //     font-size: 16px;
+                                    // }
+
+                                    .bolding {
+                                        color: #000;
+                                        font-family: "Circular Std";
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 450;
+                                        line-height: normal;
+                                    }
+                                }
+
+                                .single_name {
+                                    color: #000;
+                                    font-family: "Circular Std";
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .assignBtn {
+        width: 78px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6.154px;
+        flex-shrink: 0;
+        border-radius: 7.385px;
+        border: 1px solid #19B3B5;
+        color: #19B3B5;
+        text-align: center;
+        font-family: "Circular Std";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        // position: relative;
+        // top: 26px;
+        cursor: pointer;
+
+        &.educAssign {
+            top: 16px;
+        }
+    }
+
+    .disableBtn {
+        width: 78px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6.154px;
+        flex-shrink: 0;
+        border-radius: 7.385px;
+        border: 1px solid #959494;
+        color: #959494;
+        text-align: center;
+        font-family: "Circular Std";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .doctorBtn {
+        width: 26.158px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7.385px;
+        border: 1px solid #19B3B5;
+        // position: relative;
+        // top: 19px;
+        cursor: pointer;
+
+        .bars_arrow {
+            width: 15.219px;
+            height: 15.36px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cg clip-path='url(%23clip0_324_8107)'%3E%3Cpath d='M4.35421 6.40039C3.65666 6.40039 3.08594 6.97639 3.08594 7.68039C3.08594 8.38439 3.65666 8.96039 4.35421 8.96039C5.05177 8.96039 5.62249 8.38439 5.62249 7.68039C5.62249 6.97639 5.05177 6.40039 4.35421 6.40039ZM11.9639 6.40039C11.2663 6.40039 10.6956 6.97639 10.6956 7.68039C10.6956 8.38439 11.2663 8.96039 11.9639 8.96039C12.6614 8.96039 13.2321 8.38439 13.2321 7.68039C13.2321 6.97639 12.6614 6.40039 11.9639 6.40039ZM8.15904 6.40039C7.46149 6.40039 6.89077 6.97639 6.89077 7.68039C6.89077 8.38439 7.46149 8.96039 8.15904 8.96039C8.8566 8.96039 9.42732 8.38439 9.42732 7.68039C9.42732 6.97639 8.8566 6.40039 8.15904 6.40039Z' fill='%23626263'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_324_8107'%3E%3Crect width='15.2193' height='15.36' fill='white' transform='translate(0.548828)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+
+
+    .educatorBtn {
+        width: 78px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6.154px;
+        flex-shrink: 0;
+        border-radius: 7.385px;
+        border: 1px solid #19B3B5;
+        color: #19B3B5;
+        text-align: center;
+        font-family: "Circular Std";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        position: relative;
+        top: 22px;
+        cursor: pointer;
+    }
+}

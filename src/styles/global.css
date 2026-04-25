@@ -1,0 +1,1239 @@
+@import "../styles/main.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    padding: 0 14px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none'%3E%3Cpath d='M1 1L6.85858 6.85858C6.93668 6.93668 7.06332 6.93668 7.14142 6.85858L13 1' stroke='%23313131' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+}
+
+.table>:not(:first-child) {
+    border-top: none;
+}
+
+.ant-picker-focused {
+    box-shadow: none !important;
+}
+
+
+.availbleDoctorsCard .recent_table table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #F5F6F7;
+    z-index: 9;
+}
+
+
+.table-data .view-btn {
+    display: flex;
+    width: 65px;
+    height: 25px;
+    padding: 8.718px 8.205px;
+    justify-content: center;
+    align-items: center;
+    gap: 5.128px;
+    flex-shrink: 0;
+    border-radius: 6.154px;
+    border: 0.833px solid #19B3B5;
+    color: #19B3B5;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 10.833px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;left: -7px;
+}
+
+
+.custom-loadingWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000030;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-loadingWrapper * {
+    color: #fff;
+}
+
+.drop__menu {
+    width: 161px;
+    height: 96px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(142, 142, 142, 0.15);
+    top: -5px !important;
+}
+
+.drop__menu_item:hover {
+    background-color: #29BCC1 !important;
+    color: #FFFFFF;
+    font-weight: 450;
+}
+
+.MuiMenuItem-root.Mui-selected.mennnnnniuu:hover  {
+    background-color: #29BCC1 !important;
+    color: #FFFFFF;
+}
+
+.MuiMenuItem-root.Mui-selected.mennnnnniuu  {
+    background-color: transparent;
+    font-weight: 450;
+}
+
+.drop__menu_item {
+    padding: 10px;
+    color: #404040;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 3px;
+    width: 161px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 24px;
+}
+
+.dropdown_dashboard .dropdown-toggle::after {
+    display: none;
+}
+
+.switchDoctorModal .modal-content {
+    width: 536px;
+    height: 419px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+.switchDoctorModal .modal-body {
+    width: 536px;
+    height: 419px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+.smbgModal .modal-content {
+    width: 580px;
+    height: 488px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px -4px 20px 0px rgba(216, 218, 226, 0.20);
+}
+
+.smbgModal .modal-body {
+    width: 580px;
+    height: 488px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px -4px 20px 0px rgba(216, 218, 226, 0.20);
+}
+
+.labReportModal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labReportModal .modal-content {
+    width: 1391px;
+    height: 645px;
+    flex-shrink: 0;
+    border-radius: 15.38px;
+    background: #FFF;
+}
+
+.labReportModal .modal-body {
+    width: 1391px;
+    /* height: 645px; */
+    flex-shrink: 0;
+    border-radius: 15.38px;
+    background: #FFF;
+    padding: 1rem 40px 23px 40px !important;
+}
+
+.assignDoctorModal .modal-content {
+    width: 700px;
+    height: 400.933px;
+    border-radius: 15.672px;
+    background: #FFF;
+}
+
+.assignDoctorModal .modal-body {
+    width: 700px;
+    height: 400.933px;
+    border-radius: 15.672px;
+    background: #FFF;
+}
+
+.createBookingModal .modal-content {
+    width: 536px;
+    height: 329px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+.createBookingModal .modal-body {
+    width: 536px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+.table-data-assign thead {
+    border-bottom: 0.6px solid rgba(49, 49, 49, 0.30);
+}
+
+.table-data-assign tbody {
+    border-bottom: 0px solid transparent;
+}
+
+
+.table-mui_patients .MuiTablePagination-selectLabel {
+    display: none !important;
+}
+
+.table-mui_patients .MuiSelect-icon {
+    display: none;
+}
+
+.table-mui_patients .MuiDataGrid-columnHeadersInner {
+    width: 100%;
+}
+
+.table-mui_patients .css-yrdy0g-MuiDataGrid-columnHeaderRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-mui_patients .MuiDataGrid-iconSeparator {
+    display: none;
+}
+
+.table-mui_patients .MuiDataGrid-columnHeader {
+    width: 33% !important;
+    max-width: 33% !important;
+}
+
+.tabs_top_appointment .nav-item .nav-link {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 0.4px solid #313131;
+    color: #313131;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    white-space: nowrap;
+
+}
+
+.tabs_doctor_queue .nav-item .nav-link{
+    font-family: Nunito;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.37px;
+    text-align: center;
+    color: #313131;
+}
+.tabs_doctor_queue .nav-item .nav-link.active{
+    font-family: Nunito;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.37px;
+    text-align: center;
+    color: #19B3B5;
+    border: none;
+    border-bottom: 2px solid #19B3B5;
+}
+.tabs_doctor_queue .nav-item .nav-link:hover{
+    color: #19B3B5;
+    border: none;
+}
+
+
+.returning_patient .nav-item .nav-link {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 0.4px solid #313131;
+    color: #313131;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.hideInput {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.hideInput1 {
+    border: none;
+}
+
+.hideInput1::placeholder {
+    color: var(--Neutral-10, #12161C);
+font-family: 'nunito';
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 22.018px;
+letter-spacing: -0.32px;
+text-transform: capitalize;
+}
+
+
+.hideBorder {
+    border: none; 
+    width: 50%;
+}
+
+select.form-control.hideBorder {
+    background-image: none;
+}
+
+.tabs_top_appointment .nav-item .nav-link.active {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #EF6286;
+    color: #FFF;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    border: 1px solid #EF6286;
+    transition: .5s ease; 
+    white-space: nowrap;
+}
+
+.returning_patient .nav-item .nav-link.active {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #EF6286;
+    color: #FFF;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    border: none;
+    transition: .5s ease;
+    height: 42px;
+    white-space: nowrap;
+}
+
+.enthncitySelect {
+    color: #313131 !important;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.enthncitySelect .ant-select-selector {
+    background-color: transparent !important;
+    height: 100% !important;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-select-arrow {
+    width: 12px;
+    height: 6px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none'%3E%3Cpath d='M1 1.5L6.85858 7.35858C6.93668 7.43668 7.06332 7.43668 7.14142 7.35858L13 1.5' stroke='%23313131' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -2px;
+}
+
+
+/* bday wrapper */
+.bday {
+    color: #313131 !important;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.bday .ant-select-selector {
+    background-color: transparent !important;
+    height: 100% !important;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* bday wrapper */
+
+/* genders wrapper */
+.genderswrapper {
+    color: #313131 !important;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.genderswrapper .ant-select-selector {
+    background-color: transparent !important;
+    height: 100% !important;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* genders wrapper */
+
+.input__fields_basic {
+    width: 432px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 6.605px;
+    border: 0.5px solid #959494;
+    outline: none;
+    padding-left: 12px;
+}
+
+.remo_padin {
+    padding-left: 0px !important;
+}
+
+.input__fields_basic::placeholder {
+    color: #313131;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* .errorRed{
+    border: 1px solid red;
+} */
+
+
+.input__fields_personal {
+    width: 306px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 6.605px;
+    border: 0.5px solid #959494;
+}
+
+.input__fields_personal::placeholder {
+    color: #313131;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.selectDate {
+    width: 70px !important;
+    height: 48px !important;
+}
+
+.table-data-labs-report thead th {
+    color: #19B3B5;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    white-space: wrap;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.accordian__singling .accordian-item {
+    border: none;
+    outline: none;
+}
+
+.accordian__singling .accordion-button {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.accordian__singling .accordion-button:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+.accordian__singling .accordion-button:after {
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M7.33333 11.3333H8.66667V8.66667H11.3333V7.33333H8.66667V4.66667H7.33333V7.33333H4.66667V8.66667H7.33333V11.3333ZM3.33333 14C2.96667 14 2.65278 13.8694 2.39167 13.6083C2.13056 13.3472 2 13.0333 2 12.6667V3.33333C2 2.96667 2.13056 2.65278 2.39167 2.39167C2.65278 2.13056 2.96667 2 3.33333 2H12.6667C13.0333 2 13.3472 2.13056 13.6083 2.39167C13.8694 2.65278 14 2.96667 14 3.33333V12.6667C14 13.0333 13.8694 13.3472 13.6083 13.6083C13.3472 13.8694 13.0333 14 12.6667 14H3.33333ZM3.33333 12.6667H12.6667V3.33333H3.33333V12.6667Z' fill='%2319B3B5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .accordian__singling .accordion-button:has(.collapsed):after {
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3.33398 8.66732V7.33398H12.6673V8.66732H3.33398Z' fill='%2319B3B5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+.accordian__singling .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    border: none;
+}
+
+.accordian__singling .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='2' viewBox='0 0 10 2' fill='none'%3E%3Cpath d='M0.333984 1.66732V0.333984H9.66732V1.66732H0.333984Z' fill='%2319B3B5'/%3E%3C/svg%3E");
+    background-position: center;
+    transform: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9.33px;
+    height: 1.33px;
+}
+
+
+input[type="radio"] {
+    accent-color: #109f98;
+}
+
+.checks_radio_custom {
+    position: relative;
+}
+
+.checks_radio_custom label {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1.306px solid var(--Neutral-80, #BBC5D3);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    box-shadow: 0px 2.612px 7.836px 0px rgba(0, 0, 0, 0.08) inset;
+    background: var(--Neutral-100, #FFF);
+}
+
+.checks_radio_custom input {
+    opacity: 0;
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    cursor: pointer;
+}
+
+.checks_radio_custom input:checked+label::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z' fill='%2319B3B5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.dietaryAssessment .nav-item button {
+    font-family: 'nunito';
+}
+
+.check__radio_border input:checked+label {
+    border: 1.306px solid #19B3B5;box-shadow: initial;
+}
+
+/* .ant-select-item.ant-select-item-option.ant-select-item-option-active.ant-select-item-option-selected {
+    background: #FFF;
+    color: #313131 !important;
+}
+
+.ant-select-item.ant-select-item-option.ant-select-item-option-active.ant-select-item-option-selected:hover {
+    background: #FFF;
+    color: #313131 !important;
+} */
+
+
+/* .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background: #29BCC1;
+    color: #fff;
+} */
+
+
+.ant-select-item-option-selected {
+    background-color: #FFF !important;
+    color: #404040 !important;
+    font-weight: 300 !important;
+    font-family: Circular Std;
+font-size: 16px;
+line-height: 22.58px;
+text-align: left;
+
+}
+
+.ant-select-item-option-selected:hover {
+    background-color: #29BCC1 !important;
+    color: #FFF !important;
+    font-family: Circular Std;
+font-size: 16px;
+font-weight: 450 !important;;
+line-height: 20.24px;
+text-align: left;
+
+}
+
+
+/* radio button small */
+.checks_radio_customSmall {
+    position: relative;
+}
+
+.checks_radio_customSmall input {
+    position: absolute;
+    width: 100% !important;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 99999;
+}
+
+.checks_radio_customSmall input:checked+label:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z' fill='%2319B3B5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px;
+}
+
+.checks_radio_customSmall label {
+    position: relative;
+    padding-left: 23px;
+}
+
+.checks_radio_customSmall label:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 12px;
+    border: 1px solid #d9d9d9;
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+
+}
+
+
+
+.no_record {
+    color: #959494;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 140px 0;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: #29BCC1;
+    color: white;
+}
+
+.wraperRight .links a.active {
+    color: #19B3B5;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.16px;
+    border-bottom: 4px solid #19B3B5;
+    height: max-content;
+    padding: 12px 12px;
+    height: 55px;
+}
+
+
+.table-wraper-patients .p-datatable-table {
+    width: 100%;
+}
+
+.table-wraper-patients {
+    position: relative;
+}
+
+.table-wraper-patients .p-paginator {
+    justify-content: start;
+    position: absolute;
+    bottom: -60%;
+    border: none;
+    color: rgba(49, 49, 49, 0.80);
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.table-diabities thead {
+    border-bottom: 1.509px solid #19B3B5 !important;
+}
+
+span.ant-picker-clear {
+    display: none;
+}
+
+span.ant-select-selection-item span {
+    color: #313131;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+span.ant-select-selection-item {
+    color: #313131;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.css-1869usk-MuiFormControl-root {
+    margin: 0 !important;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+    font-size: 16px !important;
+    font-weight: 450 !important;
+    font-family: "Circular Std";
+}
+
+.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+    opacity: 0;
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiSelect-iconOutlined.MuiSelect-iconOpen.css-bpeome-MuiSvgIcon-root-MuiSelect-icon {
+    opacity: 0;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+    background-color: #29BCC1 !important;
+    color: #FFFFFF !important;
+}
+
+.toasting-notification {
+    min-width: 298px;
+    width: 298px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid #19B3B5;
+    background: #19B3B5;
+    justify-content: center;
+    align-items: center;
+    top: 255px;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+
+.MuiOutlinedInput-notchedOutline {
+    border : 0.3px solid #959494 !important;
+}
+
+.MuiOutlinedInput-notchedOutline:hover {
+    border-color: 0.3px solid #959494 !important;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; 
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.ant-table-cell::before {
+    background-color: transparent !important;
+}
+
+.incallBtn {
+    background: rgba(239, 98, 134, 0.20) !important;
+    color: #EF6286 !important;
+    font-family: 'nunito' !important;
+    font-size: 10.003px !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.tableOne1 tbody td {
+    text-transform: capitalize;
+}
+
+.tabsCustom tbody td {
+    text-transform: capitalize;
+}
+
+.tableThree tbody td {
+    text-transform: capitalize;
+}
+
+.muiiniggg {
+    display: none !important;
+}
+
+.mennnnnniuu:hover {
+    background-color: #29BCC1 !important;
+    color: #FFF;
+}
+
+.wraperInfo .MuiFormLabel-root {
+    display: none;
+}
+
+.belowinggg {
+    text-decoration: underline;
+    color: #313131;
+font-family: 'nunito';
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-decoration-line: underline;
+}
+
+.belowingSpan {
+    color: #313131;
+    font-family: 'nunito';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+select:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.anticon-clock-circle {
+    display: none;
+}
+
+.fontinggg {
+    color: #313131 !important;
+font-family: "Circular Std" !important;
+font-size: 16px !important;
+font-style: normal;
+font-weight: 450 !important;
+line-height: normal;
+}
+
+.vitalHr {
+    width: 98.7% !important;
+}
+
+.contianer_wrap {
+    /* padding: 0px; */
+    padding-left: 12px !important;
+}
+
+.table-wraper-patients .ant-table-thead > tr > th {
+    background: #F5F6F7 !important;
+    color: #8E8E8E !important;
+font-family: "Circular Std" !important;
+font-size: 16px !important;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+}
+
+.table-wraper-patients .ant-table-tbody > tr > td {
+    color: #313131 !important;
+font-family: "Circular Std" !important;
+font-size: 16px !important;
+font-style: normal;
+font-weight: 450 !important;
+line-height: normal;
+}
+
+.toasting-notification span {
+    color: #FFF;
+    text-align: center;
+    font-family: "Circular Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+tr.hk_nested td:first-child {
+    position: relative;
+    /* left: 15px; */
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiSelect-iconOutlined.css-1636szt {
+    display: none;
+}
+
+.updateBtnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiSelect-iconOutlined.MuiSelect-iconOpen.css-1yhq19e {
+    display: none;
+}
+
+.borderNone td{
+    border: none !important;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    display: none;
+}
+
+ul.tabs_doctor_queue.nav.nav-tabs{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    border: none;
+}
+
+
+.tab-content {
+    width: 100%;
+}
+                                
+.typeWrapper{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;   
+    margin-top: 5px;                           
+}
+.typeConsultationInPerson{
+    background: #EF628633;
+    width: 78.36px;
+    height: 21.06px;
+    top: 29px;
+    left: 332px;
+    padding: 3.53px 6.18px 3.53px 6.18px;
+    gap: 4.41px;
+    border-radius: 3.53px;
+    font-family: Nunito;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 13.64px;
+    text-align: left;
+    color: #EF6286;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-tabs .nav-link:focus {
+    border-color: transparent;
+}
+
+.tabs_doctor_queue.nav-tabs .nav-link {
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+}
+
+.nav-tabs .nav-link {
+    transition: none !important;
+}
+
+.nav-tabs .nav-link:hover {
+    transition: none !important;
+}
+
+.fade.doctor-scroll.tab-pane.active.show {
+    overflow-y: scroll;
+    height: 200px;
+    overflow-x: hidden;
+}
+.fade.doctor-scroll.tab-pane::-webkit-scrollbar {
+    width: 2px;
+}
+.fade.doctor-scroll.tab-pane::-webkit-scrollbar-track {
+    background: #95949433;
+}
+.fade.doctor-scroll.tab-pane::-webkit-scrollbar-thumb {
+    background-color: #95949466;
+    border-radius: 9px;
+}
+
+.headingWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.completebarWrapper{
+    margin-right: 30px;
+}
+.progressbarWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+.progressbarWrapper h4{
+    font-family: Circular Std;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17.17px;
+    text-align: left;
+    color: #313131;
+}
+.progressbarWrapper p{
+    font-family: Circular Std;
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 14.51px;
+    text-align: right;
+    color: #313131;
+}
+.completeProgress.progress {
+    width: 100%;
+    height: 4px;
+    background-color: #ECF0F0;
+    margin-top: 5px;
+}
+.completeProgress.progress .progress-bar {
+    background-color: #29BCC1;
+}
+.typeConsultationVideo{
+    background: #E1F3F4;
+    width: 78.36px;
+    height: 21.06px;
+    top: 29px;
+    left: 332px;
+    padding: 3.53px 6.18px 3.53px 6.18px;
+    gap: 4.41px;
+    border-radius: 3.53px;
+    font-family: Nunito;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 13.64px;
+    text-align: left;
+    color:#19B3B5;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapeAllInfo.educatorfixes {
+    overflow-y: auto;
+}
+
+.switchDoctorModal  input.MuiSelect-nativeInput.css-yf8vq0-MuiSelect-nativeInput {
+    /* left: 0!important;
+    width: 100%!important;
+    position: absolute!important;
+    border: 0!important;
+    opacity:1!important;
+    padding-left: 10px!important; */
+}
+
+.dropdoenAntd .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    border: .3px solid #959494;
+}
+
+.switchDocInp .ant-select-item{
+    color: #404040;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.switchDocInp .ant-select-item-option-active:not(.ant-select-item-option-disabled){
+    background-color: #29BCC1;
+    color: #FFF;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    word-spacing: -5px;
+}
+
+.dropdoenAntd .ant-select-selector {
+    color: #313131;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    height: 46px!important;
+    /* border: 0px!important; */
+    background-color: #fff !important;
+    border-radius: 10px!important;
+} 
+
+.dropdoenAntd .ant-select-selector span.ant-select-selection-search input {
+    height: 100%!important;
+    line-height: 48px!important;
+}
+ 
+.dropdoenAntd .ant-select-selector span.ant-select-selection-item {
+    line-height: 48px;
+    color: #313131;
+    font-family: "Circular Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+} 

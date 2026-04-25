@@ -1,0 +1,250 @@
+.prescriptionContentEducator {
+    .wraperForm {
+        width: 100%;
+        max-width: 1488px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: #FFF;
+        position: relative;
+        margin: auto;
+        
+        h3{
+            font-size: 28px;
+            font-weight: 600;
+            color: #313131;
+            font-family: "Nunito";
+            padding: 33px 24px 16px;
+        }
+        .custom-scrollbar {
+            .table-wrap {
+                thead{
+                    tr{
+                        th{
+                            text-align: center;
+                            color: #313131;
+font-family: "Circular Std";
+font-size: 16.128px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        &:nth-child(1){
+                            td{
+                                padding: 12px 11px;
+                                border-bottom: 1px solid #078A8E
+                            }
+                        }
+                        td{
+                            padding: 24px 11px  ;
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 450;
+                            font-family: "Circular Std";
+                            line-height: 22.77px;
+                            color: #313131;
+                            color: #313131;
+text-align: center;
+font-family: "Circular Std";
+font-size: 16px;
+font-style: normal;
+font-weight: 450 !important;
+line-height: normal;
+                            .gender{
+                                justify-content: space-between;
+                                display: flex;
+                                align-items: center;
+                                span{
+                                    color: #078A8E;
+                                }
+                            }
+                            .gender-number {
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .tableOne1 {
+                thead{
+                    tr{
+                        th:first-child{
+                            text-align: left;
+                            padding: 24px 32px!important;
+                        }
+                        th{vertical-align: middle;}
+                    }
+                }
+                tbody{
+                    tr{
+                        td:first-child{
+                            text-align: left;
+                            padding: 24px 32px!important;
+
+                            
+                        }
+                        th{vertical-align: middle;}
+                    }
+                }
+            }
+            .tabsCustom.table{
+                 th {
+                    width: 22%;
+                }
+                
+                th:first-child {
+                    width: 13%;
+                    padding-left:  32px!important
+                }
+            }
+            table{
+                margin-bottom: 0;
+                thead{
+                    tr{
+                        th{
+                            border: none;
+                            background-color: #F5F5F5;
+                            color: #313131;
+                            font-size: 20px;
+                            font-weight:450;
+                            font-family: "Circular Std";
+                            text-align: left;
+                            line-height: 25.3px;
+                            padding: 11px 0;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            padding: 19px 11px;
+                            font-size: 18px;
+                            font-weight: 500;
+                            font-family: "Circular Std";
+                            line-height: 22.77px;
+                            text-align: left;
+                            color: #313131;
+                        }
+                    }
+                }
+            }
+            .table-lab {
+                tr{
+                    th {
+                        color: #313131;
+font-family: "Circular Std";
+font-size: 16.128px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+                    }
+
+                     td{
+                        color: #313131;
+font-family: "Circular Std";
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+                        padding-left: 32px;
+                    }
+                }
+            }
+            .remarks {
+                div{
+                    padding: 26px 32px;
+                }
+                h5{
+                    background-color: #F5F5F5;
+                    padding: 11px 0 11px 32px;
+                }
+                textarea{
+                    border: 0.5px solid #313131;
+                    padding: 14px 21px;
+                    border-radius: 12px;
+                    height: 452px;
+                    width: 100%;
+                    &:focus-within{
+                        outline: 0;
+                    }
+                }
+            }  
+        }
+        .bottom-print {
+            text-align: center;
+            .btn{
+                background-color: #29BCC1;
+                width: 283px;
+                height: 48px;
+                border-radius: 10px;
+                margin: 0 0 50px 0;
+                text-transform: uppercase;
+                border: none;
+                font-size: 18px;
+                font-family: Nunito;
+                font-weight: 800;
+                text-align: center;
+                color: #FFFFFF;
+                line-height: 24.55px;
+            }
+        }
+        table{
+            margin-bottom: 0;
+            thead{
+                tr{
+                    th{
+                        border: none;
+                        background-color: #F5F5F5;
+                        color: #313131;
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-family: "Circular Std";
+                        line-height: 25.3px;
+                        text-align: center;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    &:nth-child(1){
+                        td{
+                            padding: 12px 11px;
+                            border-bottom: 1px solid #078A8E
+                        }
+                    }
+                    td{
+                        padding: 25px 0 24px;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 450;
+                        font-family: "Circular Std";
+                        line-height: 22.77px;
+                        color: #313131;
+                        .gender{
+                            justify-content: space-between;
+                            display: flex;
+                            align-items: center;
+                            span{
+                                color: #078A8E;
+                            }
+                        }
+                        .gender-number {
+                            display: flex;
+                            justify-content: space-around;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.labbbb {
+    padding-left: 34px !important;
+}

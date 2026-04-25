@@ -1,0 +1,155 @@
+.navbarComp {
+    width: 100%;
+    height: 64px;
+    flex-shrink: 0;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 17.59px;
+        padding-left: 24px;
+        padding-right: 24px;
+        cursor: pointer;
+
+        .nav__logo {
+            width: 108.411px;
+            height: 22.112px;
+            object-fit: cover;
+        }
+
+        .circular_bar {
+            width: 112px;
+            height: 40px;
+            border-radius: 8px;
+            border: 0.5px solid #EEE;
+            background: rgba(244, 244, 244, 0.40);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 11px;
+
+            .hpfLogo {
+                width: 32px;
+                height: 26px;
+                object-fit: cover;
+            }
+
+            .divider {
+                height: 30px;
+                background-color: #EEE;
+            }
+
+            .bideLogo {
+                width: 50px;
+                height: 16px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .wraperRight {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .links {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            position: relative;
+
+            a {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #383838;
+                text-align: center;
+                font-family: Nunito;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: 0.16px;
+                text-decoration: none;
+                align-self: flex-end;
+                text-align: center;
+                height: 60px;
+            }
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .circleDropdown {
+                background-color: #EF6286;
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                color: #fff;
+                text-align: center;
+                color: #FFF;
+                text-align: center;
+                font-family: 'nunito';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 140%;
+                /* 25.2px */
+                letter-spacing: 0.18px;
+            }
+
+            .dropdown-toggle::after {
+                display: none;
+            }
+
+            // .btn-success{
+            //     background-color: transparent;
+            //     outline: none;
+            // }
+            .dropdown {
+                .btn-success {
+                    border: none;
+                    background-color: transparent;
+
+                }
+
+                &:focus-visible {
+                    outline: 0 !important;
+                }
+
+                .btn-success:focus {
+                    box-shadow: none;
+                }
+
+                .dropdown-item:active {
+                    background-color: transparent;
+                    color: #313131;
+                }
+            }
+
+            .notificationBtns {
+                button {
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    padding: 8px 13px;
+                    background-color: #f4f4f4 !important;
+                    border-color: #f4f4f4 !important;
+                }
+            }
+        }
+    }
+}

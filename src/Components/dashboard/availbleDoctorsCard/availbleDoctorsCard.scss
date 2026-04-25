@@ -1,0 +1,129 @@
+.availbleDoctorsCard {
+    width: 732px;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+
+    .tableHeight {
+        height: 200px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #95949433;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #95949466;
+            border-radius: 9px;
+        }
+
+    }
+
+    .availableDoctorHeading {
+        color: #545554;
+
+        font-family: "Circular Std";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+    }
+
+    h3 {
+        width: 100%;
+        height: 75px;
+        color: #19B3B5;
+        font-family: "Circular Std";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        align-items: center;
+        padding-left: 23px;
+        padding-top: 30px;
+    }
+
+    .table-data {
+        width: 100%;
+
+        thead {
+            width: 100%;
+            height: 37px;
+            background-color: #F5F6F7;
+
+            th {
+                min-width: 26%;
+                padding-left: 23px;
+                color: #8E8E8E;
+                font-family: "Circular Std";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: normal;
+                white-space: nowrap;
+                // text-align: center;
+
+            }
+        }
+
+        tbody {
+            border-color: #D9D9D9;
+
+            tr {
+                width: 100%;
+                height: 42px;
+
+                td {
+                    width: 26%;
+                    color: #313131;
+                    font-family: "Circular Std";
+                    padding-left: 24px;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    padding-top: 13px;
+                    padding-bottom: 13px;
+                }
+            }
+        }
+    }
+}
+
+.recent_table {
+    width: 100% !important;
+}
+
+.recent_table::-webkit-scrollbar {
+    height: 4px;
+}
+
+.recent_table::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+}
+
+.recent_table::-webkit-scrollbar-thumb {
+    background: rgba(149, 148, 148, 0.40);
+    border-radius: 8px;
+}
+
+.patient-counttt {
+    text-align: center;
+    padding-left: 8px !important;
+}
+
+.site-txtt {
+    padding-right: 26px !important;
+    width: 20% !important;
+    white-space: nowrap;
+}

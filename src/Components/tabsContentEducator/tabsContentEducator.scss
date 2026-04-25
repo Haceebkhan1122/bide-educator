@@ -1,0 +1,170 @@
+.profile-detail {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 28px 24px 33px;
+    margin-bottom: 38px;
+     .details{
+        display: flex;
+        justify-content: space-between;
+        h3{
+            color: #313131;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            font-family: Nunito;
+        }
+        p{
+            color: #19B3B5;
+            font-family: Nunito;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+     }
+     
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 70px;
+        li{
+            h6{
+                font-size: 18px;
+                font-weight: 300;
+                font-family: "Circular Std";
+                color: #313131;
+                line-height: 25.4px;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 450;
+                color: #313131;
+                font-family: "Circular Std";
+            }
+        }
+    }
+  
+}
+
+.patient-profile{
+    
+    .TabsEducator{
+        position: relative;
+        .dateEducator{
+            position: absolute;
+            right: 0;
+            top: -25px;
+            label{
+                display: block;
+                color: #313131;
+                font-family: "Circular Std";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+    }
+    .ant-picker.datePickerTabs {
+        width: 280px;
+        height: 44px;
+        // position: absolute;
+        border-radius: 10px;
+        border: 0.3px solid #404040;
+        background: #FFF;
+        .ant-picker-input{
+            input{
+            order: 1;
+            margin-left: 1.5rem;
+            color: #959494;
+            font-family: "Circular Std";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            }
+        }
+        .ant-picker-input:after{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none'%3E%3Cpath d='M1 1L6.85858 6.85858C6.93668 6.93668 7.06332 6.93668 7.14142 6.85858L13 1' stroke='%23383838' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+            content: '';
+            position: absolute;
+            top: 8px;
+            right: -35px;
+            width:50px;
+            height:50px;
+            background-repeat: no-repeat;
+        
+        }
+        margin-right: 12px;
+
+
+    }
+    .tabs_top_appointment{
+        padding-left: 0;
+        .nav-item .nav-link {
+        border: 0.4px solid rgba(49, 49, 49, 1);
+        font-family: Circular Std;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(49, 49, 49, 1);
+        white-space: nowrap;
+
+        &:hover {
+            font-family: Circular Std;
+            font-size: 18px;
+           
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: rgb(239, 98, 134);
+            transition: all 0.3s ease-in-out;
+            border: 1px solid rgb(239, 98, 134);
+         }
+        }
+        .nav-item .nav-link.active{
+            color: #fff;
+            border-color: rgba(239, 98, 134, 1);
+        }
+    }
+    .datePickerBox{
+        position: absolute;
+        right:0;
+        top: -25px;
+        z-index: 99;
+        label{
+            color: #313131;
+            font-family: "Circular Std";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            display: block;
+            width: 280px;
+            margin: 0  ;
+            text-align: left;
+        }
+        .datePickerTabs   {
+            input{
+            color: #959494;
+            font-family: "Circular Std";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        }
+}
+}
+
+.dividerEducator {
+    width: 100%;
+    height: 0.3px;
+    background: #313131;
+    margin-top: 28px;
+    margin-bottom: 25px !important;
+    margin: auto;
+}

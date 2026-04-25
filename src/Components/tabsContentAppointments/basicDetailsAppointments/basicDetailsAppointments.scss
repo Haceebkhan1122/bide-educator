@@ -1,0 +1,388 @@
+.basicDetailsAppointments {
+    width: 100%;
+    max-width: 1488px;
+    height: 559px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 43px;
+    gap: 23px;
+    position: relative;
+    margin: auto;
+
+    .ErrorState {
+        color: #bc0001;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .enthncitySelect {
+        .ant-select-selector {
+            outline: none;
+            box-shadow: none !important;
+        }
+
+        .ant-dropdown-menu {
+            border-radius: 8px !important;
+        }
+    }
+
+    .selectGender {
+        .ant-select-selector {
+            outline: none;
+            box-shadow: none !important;
+        }
+    }
+
+    .toasting-Error {
+        min-width: 298px;
+        height: 40px;
+        position: absolute;
+        top: -15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 6px;
+        border: 1px solid #B22222;
+        background: #CC3333;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: #FFFFFF;
+            text-align: center;
+            font-family: "Circular Std";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            /* 25.2px */
+        }
+    }
+
+
+    .toasting-notification {
+        min-width: 298px;
+        height: 40px;
+        position: absolute;
+        top: -15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 6px;
+        border: 1px solid #19B3B5;
+        background: #19B3B5;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: #FFF;
+            text-align: center;
+            font-family: "Circular Std";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            /* 25.2px */
+        }
+    }
+
+    .singleRow {
+        width: 100%;
+        display: flex;
+        gap: 13px;
+        padding-left: 22px;
+
+        .single {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: start;
+
+            label {
+                color: #535151;
+                font-family: "Circular Std";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: normal;
+            }
+
+            .mr_input {
+                display: flex;
+                width: 219px;
+                height: 43px;
+                padding: 6.794px 13.588px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8.492px;
+                border-radius: 6.794px;
+                background: rgba(217, 217, 217, 0.75);
+                color: var(--Black-4, #5E6366);
+                font-family: "Circular Std";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                padding: 0px 5px;
+                border: none;
+                outline: none;
+                padding-left: 13.59px;
+
+                &::placeholder {
+                    color: var(--Black-4, #5E6366);
+                    font-family: "Circular Std";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .singleRowNames {
+        display: flex;
+        align-items: center;
+        gap: 72px;
+        padding-top: 0px;
+
+        .single {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: start;
+
+            label {
+                color: #535151;
+                font-family: "Circular Std";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: normal;
+            }
+
+            .nameInp {
+                width: 456px;
+                height: 48px;
+                flex-shrink: 0;
+                padding-left: 14px;
+                border-radius: 6px;
+                border: 0.3px solid #959494;
+                color: #313131;
+                font-family: "Circular Std";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+
+                &::placeholder {
+                    color: #313131;
+                    font-family: "Circular Std";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+
+            .cnicInp {
+                width: 456px;
+                height: 48px;
+                flex-shrink: 0;
+                border-radius: 6px;
+                border: 0.3px solid #959494;
+                padding-left: 14px;
+
+                &::placeholder {
+                    color: #313131;
+                    font-family: "Circular Std";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .genderswrapper {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            
+            label {
+                color: #535151;
+                font-family: "Circular Std";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: normal;
+            }
+
+
+            .selectGender {
+                width: 144px;
+                height: 48px;
+                flex-shrink: 0;
+                border-radius: 6.605px;
+                border: 0.5px solid #959494;
+            }
+
+            .bdayWrapper {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .bday {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .selectDate {
+                        width: 70px;
+                        height: 48px;
+                        flex-shrink: 0;
+                        border-radius: 6.605px;
+                        border: 0.5px solid #959494;
+                    }
+
+                    .selectMonth {
+                        width: 70px;
+                        height: 48px;
+                        flex-shrink: 0;
+                        border-radius: 6.605px;
+                        border: 0.5px solid #959494;
+                    }
+
+                    .selectYear {
+                        width: 100px;
+                        height: 48px;
+                        flex-shrink: 0;
+                        border-radius: 6.605px;
+                        border: 0.5px solid #959494;
+                    }
+                }
+            }
+        }
+    }
+
+    .singleRowBottoms {
+        display: flex;
+        align-items: center;
+        gap: 72px;
+        padding-top: 15px;
+
+        .single {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+                color: #535151;
+                font-family: "Circular Std";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: normal;
+            }
+
+            .bottomInp {
+                width: 456px;
+                height: 48px;
+                flex-shrink: 0;
+                border-radius: 6px;
+                border: 0.3px solid #959494;
+                color: #313131;
+                font-family: "Circular Std";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                padding-left: 14px;
+
+                &.select-singlee {
+                    padding-left: 0px !important;
+                }
+
+                &::placeholder {
+                    color: #313131;
+                    font-family: "Circular Std";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .continueBtn {
+        position: absolute;
+        right: 26px;
+        width: 211px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #29BCC1;
+        color: #FFF;
+        text-align: center;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        display: flex;
+        align-self: flex-end;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 43px;
+        right: 22px;
+
+    }
+
+    .continueBtn1 {
+        width: 177px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #29BCC1;
+        color: #FFF;
+        text-align: center;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        display: flex;
+        align-self: flex-end;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 43px;
+        right: 220px;
+        margin-right: 35px;
+    }
+}
+
+
+.erorrrr {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.singleBas {
+    height: 72.2px;
+}

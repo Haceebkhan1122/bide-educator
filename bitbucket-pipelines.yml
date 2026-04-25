@@ -1,0 +1,16 @@
+options:
+  max-time: 10
+pipelines:
+  branches:
+    developer:
+      - step:
+          name: build and run the app
+          image: node:latest
+          size: 2x
+          script:
+            - if [ $BITBUCKET_BRANCH == 'developer' ]; then
+                echo "We are on master :)"
+            - npm run build
+            - echo "Done!"
+          artifacts:
+            - dist/** 

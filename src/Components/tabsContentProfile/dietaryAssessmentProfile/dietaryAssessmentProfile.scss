@@ -1,0 +1,467 @@
+.dietaryAssessment {
+    .wraperForm {
+        width: 100%;
+        // max-width: 1488px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: #FFF;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .ant-picker.datePickerTabs {
+        width: 280px;
+        height: 44px;
+        // position: absolute;
+        border-radius: 10px;
+        border: 0.3px solid #404040;
+        background: #FFF;
+
+        .ant-picker-input {
+            input {
+                order: 1;
+                margin-left: 1.5rem;
+                color: #959494;
+                font-family: "Circular Std";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+
+        .ant-picker-input:after {
+            // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none'%3E%3Cpath d='M1 1L6.85858 6.85858C6.93668 6.93668 7.06332 6.93668 7.14142 6.85858L13 1' stroke='%23383838' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+            content: '';
+            position: absolute;
+            top: 8px;
+            right: -35px;
+            width: 50px;
+            height: 50px;
+            background-repeat: no-repeat;
+
+        }
+
+        margin-right: 12px;
+
+
+    }
+
+    .date {
+        margin-bottom: 26px;
+
+        label {
+            font-size: 18px;
+            font-weight: 300;
+            font-family: "Circular Std";
+            color: #313131;
+            width: 100%;
+        }
+
+        .date-input {
+            border: 0.3px solid #404040;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            width: 280px;
+            height: 44px;
+            padding: 7px 16px 8px;
+            background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none'%3E%3Cpath d='M1 1L6.85858 6.85858C6.93668 6.93668 7.06332 6.93668 7.14142 6.85858L13 1' stroke='%23383838' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 93% center;
+            outline: none;
+
+            .ant-picker {
+                background: initial;
+            }
+
+            .arrow {
+                position: absolute;
+                top: 18px;
+                height: 6px;
+                right: 0;
+            }
+
+            input {
+                color: #959494;
+                font-family: "Circular Std";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+            img {
+                // padding-right: 20px;
+            }
+
+            .ant-picker {
+                width: 100%;
+                border: none;
+                padding-left: 0;
+            }
+        }
+
+        input[type="date"] {
+            border: none;
+            margin-left: 24px;
+            width: 100%;
+
+            &::-webkit-calendar-picker-indicator {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none'%3E%3Cpath d='M1 1L6.85858 6.85858C6.93668 6.93668 7.06332 6.93668 7.14142 6.85858L13 1' stroke='%23383838' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+                width: 12px;
+                height: 6px;
+            }
+        }
+    }
+
+    .nav-tabs {
+        border: none;
+        margin: 0 24px;
+
+        .nav-link {
+            border: none;
+            font-size: 22px;
+            color: #313131;
+            font-weight: 600;
+            padding-left: 22px;
+            padding-right: 22px;
+            width: 343px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .nav-link.active {
+            border-bottom: 4px solid #19B3B5;
+            color: #19B3B5;
+        }
+    }
+
+    .tab-content {
+        .tab-pane {
+            .eucational-height {
+                min-height: 370px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+
+                .eucational {
+                    margin-bottom: 0;
+
+                    thead {
+                        tr {
+                            th {
+                                background: #D9D9D999;
+                                padding: 10px 25px 11px;
+                                color: #313131;
+                                font-weight: 450;
+                                font-size: 20px;
+                                font-family: "Circular Std";
+
+                                &:last-child {
+                                    padding-left: 63px
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            td {
+                                font-size: 18px;
+                                font-family: "Circular Std";
+                                font-weight: 300;
+                                padding: 13px 39px;
+                                color: #535151;
+                                width: 50%;
+
+                                &:nth-child(1) {
+                                    border-right: 1px solid #959494
+                                }
+
+                                &:last-child {
+                                    padding-left: 63px;
+                                }
+
+                                .checks-single-wraper {
+                                    display: inline-flex;
+                                    gap: 25px;
+
+                                    .yes-single {
+                                        display: flex;
+                                        gap: 9px;
+                                        align-items: center;
+
+                                        input {
+                                            width: 15px;
+                                            height: 15px;
+                                            margin-top: 0;
+                                        }
+
+                                        label {
+                                            color: var(--Neutral-10, #12161C);
+                                            font-family: Nunito;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 300;
+                                            line-height: 22.018px;
+                                            letter-spacing: -0.32px;
+                                            width: auto;
+                                            margin-bottom: auto;
+                                            text-transform: capitalize;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .eucational.firstTable {
+                    tbody {
+                        tr {
+                            td:nth-child(1) {
+                                padding: 13px 25px;
+                                width: 50%;
+                            }
+
+                            td:nth-child(2) {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dietary-height {
+                height: 370px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                padding-bottom: 40px;
+                border-bottom-right-radius: 12px;
+                border-bottom-left-radius: 12px;
+
+                .dietary1 {
+                    margin-bottom: 0;
+
+                    thead {
+                        tr {
+                            th {
+                                background: #D9D9D999;
+                                text-align: center;
+                                padding: 10px .5rem 11px;
+                                color: #313131;
+                                font-weight: 450;
+                                font-size: 16.6px;
+                                font-family: "Circular Std";
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            td {
+                                font-size: 18px;
+                                font-family: "Circular Std";
+                                font-weight: 300;
+                                text-align: center;
+                                padding: 13px .5rem;
+                                border: 0.1px solid #000000;
+                                color: #535151;
+                                width: 298px;
+
+                                &:last-child {
+                                    border-right: none;
+                                }
+
+                                &:first-child {
+                                    border-left: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .dietary2 {
+                    margin-bottom: 0;
+
+                    thead {
+                        tr {
+                            th {
+                                background: #D9D9D999;
+                                padding: 10px .5rem 11px;
+                                color: #313131;
+                                font-weight: 450;
+                                font-size: 18.26px;
+                                font-family: "Circular Std";
+
+                                &:first-child {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            th {
+                                border: 0.49px solid #959494;
+                                font-size: 14.94px;
+                                font-family: "Circular Std";
+                                font-weight: 450;
+                                padding: 8px .5rem !important;
+                                text-align: center;
+                                color: #535151;
+
+                                &:nth-child(1) {
+                                    text-align: left;
+                                }
+
+                                &:nth-child(7),
+                                &:nth-child(8),
+                                &:nth-child(9) {
+                                    color: #EF6286;
+                                }
+
+                                &:last-child {
+                                    border-right: none;
+                                }
+
+                                &:first-child {
+                                    border-left: none;
+                                }
+                            }
+
+                            td {
+                                border: 0.49px solid #959494;
+                                font-size: 14.94px;
+                                font-family: "Circular Std";
+                                font-weight: 450;
+                                text-align: center;
+                                padding: 8px .5rem;
+                                color: #535151;
+
+                                &:last-child {
+                                    border-right: none;
+                                }
+
+                                &:first-child {
+                                    border-left: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .dietary3 {
+                    thead {
+                        tr {
+                            th {
+                                background: #D9D9D999;
+                                text-align: center;
+                                padding: 10px .5rem 11px;
+                                color: #313131;
+                                font-weight: 450;
+                                font-size: 16.6px;
+                                font-family: "Circular Std";
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            td {
+                                font-size: 18px;
+                                font-family: "Circular Std";
+                                font-weight: 300;
+                                padding: 13px .5rem;
+                                text-align: center;
+                                border: 0.1px solid #000000;
+                                color: #535151;
+
+                                &:last-child {
+                                    border-right: none;
+                                }
+
+                                &:first-child {
+                                    border-left: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .dietary4 {
+                    margin-bottom: 0;
+
+                    thead {
+                        tr {
+                            th {
+                                background: #D9D9D999;
+                                padding: 10px .5rem 11px;
+                                color: #313131;
+                                font-weight: 450;
+                                font-size: 16.6px;
+                                font-family: "Circular Std";
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+
+                            td,
+                            th {
+                                font-size: 18px;
+                                width: 80px;
+                                font-family: "Circular Std";
+                                font-weight: 300;
+                                padding: 13px .5rem;
+                                border: 0.1px solid #000000;
+                                color: #535151;
+
+                                &:last-child {
+                                    border-right: none;
+                                }
+
+                                &:first-child {
+                                    border-left: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .print-btn {
+                text-align: right;
+                background-color: #FFFFFF;
+                border-radius: 0px 0px 15px 15px;
+                box-shadow: 0px -4px 20px 0px #D8DAE233;
+                padding: 22px 27px 23px 0;
+
+                .btn {
+                    background-color: #29BCC1;
+                    color: white;
+                    width: 283px;
+                    height: 48px;
+                    border-radius: 10px;
+                    font-family: Nunito;
+                    font-weight: 800;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.print.moda01 .modal-content {
+    border-radius: 14px;
+}

@@ -1,0 +1,47 @@
+.returning-patient {
+    width: 100%;
+
+    .top {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        margin-bottom: 28px;
+
+        .back-arrow {
+            width: 35px;
+            height: 35px;
+        }
+
+        h3 {
+            color: #313131;
+            font-family: Nunito;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 0px !important;
+        }
+    }
+
+    .tabs_top_appointment {
+        display: flex;
+        gap: 17px;
+        align-items: center;
+        margin-bottom: 28px;
+        border-bottom: none;
+        white-space: nowrap;
+
+    }
+
+    .divider {
+        width: 90%;
+        height: 0.3px;
+        background: #313131;
+        margin-top: 28px;
+        margin-bottom: 25px !important;
+    }
+}
+
+.returning_patient.nav.nav-tabs {
+    border-bottom: 0px solid #dee2e6 !important;
+}

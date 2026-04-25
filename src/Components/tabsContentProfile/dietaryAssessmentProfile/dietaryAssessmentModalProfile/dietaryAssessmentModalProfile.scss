@@ -1,0 +1,269 @@
+.print {
+    .modal-dialog{
+        max-width: 1277px;
+        padding: 64px 39px 35px;
+        border: none;
+        .modal-content{    border: 0px solid rgba(0, 0, 0, .2)!important;}
+        .modal-header{
+            border-bottom: none;
+        }
+        .modal-body {
+            padding: 0;
+        }
+    }
+    .download {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        h3{
+            font-size: 28px;
+            font-weight: 600;
+            color:#19B3B5 ;
+            font-family: 'nunito';
+            line-height: 38.19px;
+        }
+        h3.colorblue{
+            color: #19B3B5; 
+        }
+        button{
+            display: inline-flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: Nunito;
+            line-height: 19.1px;
+            color: #313131;
+            img {
+                width: 24px;
+                height: 24px;
+                margin-right: 12px;
+                object-fit: contain;
+            }
+        }
+    }
+    .dietary-broder {
+        border: 0.3px solid #313131;
+        border-radius: 14px;
+        position: relative;
+        padding: 23px 0 0;
+        img {
+            width: 190px;
+            height: 40px;
+            position: absolute;
+            top: 23px;
+            right: 31px;
+        }
+        .detail{
+            padding: 0 18px 37px;
+            h4{
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 28px;
+                font-family: Nunito;
+                line-height: 30.01px;
+                color: #313131;
+            }
+            .detail-wrap {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                h6{
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #313131;
+                    font-family: "Circular Std";
+                    margin-bottom: 8px;
+                    line-height: 22.77px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 450;
+                    line-height: 22.77px;
+                    font-family: "Circular Std";
+                    color: #313131;
+                }
+            }
+        }
+        .dietary1 {
+            margin-bottom: 0;
+            thead{
+                tr{
+                    th{
+                        background: #D9D9D999;
+                        text-align: center;
+                        padding: 10px .5rem 11px;
+                        color: #313131;
+                        font-weight: 450;
+                        font-size: 16.6px;
+                        font-family: "Circular Std";
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        font-size: 18px;
+                        font-family: "Circular Std";
+                        font-weight: 300;
+                        text-align: center;
+                        padding: 13px .5rem;
+                        border: 0.1px solid #000000;
+                        color: #535151;
+                        width: 298px;
+                        &:last-child{
+                            border-right: none;
+                        }
+                        &:first-child{
+                            border-left: none;
+                        }
+                    }
+                }
+            }
+        }
+        .dietary2 {
+            margin-bottom: 0;
+            thead{
+                tr{
+                    th{
+                        background: #D9D9D999;
+                        padding: 10px .5rem 11px;
+                        color: #313131;
+                        font-weight: 450;
+                        font-size: 18.26px;
+                        font-family: "Circular Std";
+                        &:first-child{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    th{
+                        border: 0.49px solid #959494;
+                        font-size: 14.94px;
+                        font-family: "Circular Std";
+                        font-weight: 450;
+                        padding: 8px .5rem;
+                        text-align: center;
+                        color: #535151;
+                        &:nth-child(1){
+                            text-align: left;
+                        }
+                        &:nth-child(7), &:nth-child(8), &:nth-child(9){
+                            color: #EF6286;
+                        }
+                        &:last-child{
+                            border-right: none;
+                        }
+                        &:first-child{
+                            border-left: none;
+                        }
+                    }
+                    td{
+                        border: 0.49px solid #959494;
+                        font-size: 14.94px;
+                        font-family: "Circular Std";
+                        font-weight: 450;
+                        text-align: center;
+                        padding: 8px .5rem;
+                        color: #535151;
+                        &:last-child{
+                            border-right: none;
+                        }
+                        &:first-child{
+                            border-left: none;
+                        }
+                    }
+                }
+            }
+        }
+        .dietary3 {
+            thead{
+                tr{
+                    th{
+                        background: #D9D9D999;
+                        text-align: center;
+                        padding: 10px .5rem 11px;
+                        color: #313131;
+                        font-weight: 450;
+                        font-size: 16.6px;
+                        font-family: "Circular Std";
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        font-size: 18px;
+                        font-family: "Circular Std";
+                        font-weight: 300;
+                        padding: 13px .5rem;
+                        text-align: center;
+                        border: 0.1px solid #000000;
+                        color: #535151;
+                        &:last-child{
+                            border-right: none;
+                        }
+                        &:first-child{
+                            border-left: none;
+                        }
+                    }
+                }
+            }
+        }
+        .dietary4 {
+            thead{
+                tr{
+                    th{
+                        background: #D9D9D999;
+                        padding: 10px .5rem 11px;
+                        color: #313131;
+                        font-weight: 450;
+                        font-size: 16.6px;
+                        font-family: "Circular Std";
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td, th{
+                        font-size: 18px;
+                        width: 80px;
+                        font-family: "Circular Std";
+                        font-weight: 300;
+                        padding: 13px .5rem;
+                        border: 0.12px solid #000000;
+                        color: #535151;
+                        &:last-child{
+                            border-right: none;
+                        }
+                        &:first-child{
+                            border-left: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .button-print {
+        text-align: center;
+        margin-top: 26px;
+        .btn-primary {
+            background-color: #29BCC1;
+            width: 211px;
+            border: none;
+            height: 48px;
+            border-radius: 10px;
+            color: #FFF;
+            text-align: center;
+            font-family: Nunito;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.9px;
+        }
+    }
+}

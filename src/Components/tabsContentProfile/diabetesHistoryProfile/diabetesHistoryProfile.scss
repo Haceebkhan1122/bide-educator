@@ -1,0 +1,228 @@
+.diabetesHistory {
+    width: 100%;
+    max-width: 1488px;
+    height: 560px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 23px;
+    position: relative;
+
+    .wraperForm {
+        position: relative;
+        height: 100%;
+
+        .single {
+            margin-bottom: 15px;
+
+            label {
+                width: 100%;
+                margin-bottom: 5px;
+                font-family: 'Circular Std';
+                font-weight: 450;
+                font-size: 16px;
+                color: #535151;
+            }
+
+            .dateInp {
+                border: 0.5px solid #959494;
+                height: 43px;
+                border-radius: 6.61px;
+                width: 140px;
+                padding: 10px;
+
+                .ant-picker-input {
+                    input {
+                        margin-left: 0;
+                        color: #959494;
+                        font-family: "Circular Std";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            .checks-single-wraper {
+                display: flex;
+                width: 100%;
+                height: 43px;
+                padding: 8.807px 15.413px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 22.018px;
+                justify-content: space-between;
+                border: 0.5px solid #959494;
+
+                .yes-single {
+                    display: flex;
+                    gap: 9px;
+                    align-items: center;
+
+                    input {
+                        width: 15px;
+                        height: 15px;
+                        margin-top: 0;
+                    }
+
+                    label {
+                        color: var(--Neutral-10, #12161C);
+                        font-family: Nunito;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 22.018px;
+                        letter-spacing: -0.32px;
+                        width: auto;
+                        margin-bottom: auto;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            .single-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .checks-single-wraper {
+                    width: 154px;
+                }
+            }
+        }
+
+        .singleInput {
+            textarea {
+                width: 100%;
+                border: 0.5px solid #959494;
+                margin-top: 6px;
+                padding: 5px 10px;
+                color: #313131;
+                border-radius: 6.61px;
+                height: 61px;
+                resize: none;
+
+                &::placeholder {
+                    color: #313131;
+                }
+            }
+
+            label {
+                margin-bottom: 0;
+            }
+        }
+
+        .ErrorState {
+            color: #bc0001;
+            font-weight: 500;
+            font-size: 12px;
+            margin-top: -15px;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 450;
+            color: #313131;
+            margin: 0 0 24px 24px;
+            font-family: 'Circular Std';
+        }
+
+        .table-responsive {
+            overflow: scroll;
+            height: 390px;
+
+            &::-webkit-scrollbar-track {
+                border-radius: 0;
+                background-color: #D9D9D9;
+            }
+
+            &::-webkit-scrollbar {
+                width: 6px;
+                background-color: #D9D9D9;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 6px;
+                background-color: #95949466;
+            }
+
+            &::-webkit-scrollbar:horizontal {
+                height: 6px;
+            }
+        }
+
+        .table-diabities {
+            tr {
+                th {
+                    color: #19B3B5;
+                    font-size: 18px;
+                    font-weight: 450;
+                    text-align: center;
+                    border-bottom: 1.51px solid #19B3B5;
+                    padding: 0 0.5rem 14px 0.5rem;
+                    font-family: 'Circular Std';
+                    padding-left: 32px;
+                    padding-right: 32px;
+                    position: sticky;
+                    top: 0;
+                    background-color: white;
+                }
+
+                td {
+                    text-align: center;
+                    padding: 12px 40px;
+
+                    .gap3 {
+                        gap: 9px;
+                    }
+
+                    .btn {
+                        background-color: transparent;
+                        border: none;
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+
+                    .print {
+                        color: #19B3B5;
+                        font-family: "Circular Std";
+                        font-size: 12.5px;
+                        font-weight: 500;
+                        line-height: 15.81px;
+                        border: 1.25px solid #19B3B5;
+                        width: 65px;
+                        height: 31.25px;
+                        border-radius: 9.23px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .update__btn {
+            position: absolute;
+            bottom: 27px;
+            right: 28px;
+            background-color: #19B3B5;
+            border-radius: 10px;
+            height: 48px;
+            font-family: Nunito;
+            width: 211px;
+            font-size: 18px;
+            font-weight: 800;
+            color: #fff;
+            line-height: 24.55px;
+        }
+    }
+}

@@ -1,0 +1,250 @@
+.printpresc {
+    .modal-dialog {
+        max-width: 1277px;
+        padding: 64px 39px 35px;
+        border: none;
+
+        .modal-content {
+            border-radius: 14px;
+
+            .modal-body {
+                padding: 64px 39px 35px;
+
+            }
+        }
+    }
+
+    .download {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4px;
+
+
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #313131;
+            font-family: 'nunito';
+            line-height: 38.19px;
+        }
+
+        button {
+            display: inline-flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: Nunito;
+            line-height: 19.1px;
+            color: #313131;
+
+            img {
+                width: 24px;
+                height: 24px;
+                margin-right: 12px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .prescrip-broder {
+        border: 0.3px solid #313131;
+        border-radius: 14px;
+        position: relative;
+        padding: 23px 0 0;
+
+        img {
+            width: 190px;
+            height: 40px;
+            position: absolute;
+            top: 23px;
+            right: 31px;
+        }
+
+        .detail {
+            padding: 0 18px 37px;
+
+            h4 {
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 28px;
+                font-family: Nunito;
+                line-height: 30.01px;
+                color: #313131;
+            }
+
+            .detail-wrap {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+
+                h6 {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #313131;
+                    font-family: "Circular Std";
+                    margin-bottom: 14px;
+                    line-height: 22.77px;
+                    color: #313131;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 450;
+                    line-height: 22.77px;
+                    font-family: "Circular Std";
+                    color: #313131;
+                }
+            }
+        }
+
+        .table-wrap {
+            thead {
+                tr {
+                    th {
+                        text-align: center;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    &:nth-child(1) {
+                        td {
+                            padding: 12px 11px;
+                            color: #313131;
+text-align: center;
+font-family: "Circular Std";
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+                            border-bottom: 1px solid #078A8E;
+                        }
+                    }
+
+                    td {
+                        padding: 19px 11px 18px;
+                        text-align: center;
+                        font-weight: 500;
+                        font-family: "Circular Std";
+                        line-height: 22.77px;
+                        color: #313131;
+                        color: #313131;
+                        text-align: center;
+                        font-family: "Circular Std";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 450;
+                        line-height: normal;
+
+                        .gender {
+                            justify-content: space-between;
+                            display: flex;
+                            align-items: center;
+
+                            span {
+                                color: #078A8E;
+                            }
+                        }
+
+                        .gender-number {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0 3px;
+                        }
+                    }
+                }
+            }
+        }
+
+        table {
+            margin-bottom: 0;
+
+            thead {
+                tr {
+                    th {
+                        border: none;
+                        background-color: #F5F5F5;
+                        color: #313131;
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-family: "Circular Std";
+                        line-height: 25.3px;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: 19px 11px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: "Circular Std";
+                        line-height: 22.77px;
+                        color: #313131;
+                    }
+                }
+            }
+        }
+
+        .table-lab {
+            tr {
+
+                th,
+                td {
+                    padding-left: 32px;
+                    color: #313131;
+font-family: "Circular Std";
+font-size: 16px;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+                }
+            }
+        }
+
+        .remarks {
+            div {
+                padding: 26px 42px;
+            }
+
+            h5 {
+                background-color: #F5F5F5;
+                padding: 11px 0 11px 42px;
+            }
+
+            textarea {
+                border: 0.5px solid #313131;
+                padding: 14px 21px;
+                border-radius: 12px;
+                height: 78px;
+                width: 100%;
+                color: #313131;
+                font-family: "Circular Std";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+
+                &:focus-within {
+                    outline: 0;
+                }
+            }
+        }
+    }
+
+    .button-print {
+        text-align: center;
+        margin-top: 44px;
+
+        .btn-primary {
+            background-color: #29BCC1;
+            width: 211px;
+            border: none;
+            height: 48px;
+            border-radius: 10px;
+        }
+    }
+}

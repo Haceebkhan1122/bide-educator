@@ -1,0 +1,284 @@
+.saveButton{
+    box-shadow: initial!important;
+    padding-top: 48px!important;
+}
+.dietary1 {
+    tbody{
+        td{
+            height: 64px;
+        }
+    }
+}
+
+.dietaryAssessment  .eucational-height .hideInput1.inpttt_te{
+    font-size: 16px;
+    font-weight: 300;
+}
+.dietaryAssessment .tab-content .tab-pane .dietary-height .dietary2 tbody tr th{padding:8px 17px!important; }
+.toasting-notification2 {
+    min-width: 298px;
+    width: 398px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: -15px;
+    display: flex;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid #19B3B5;
+    background: #19B3B5;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease-in-out;
+    span {
+        color: #FFF;
+        text-align: center;
+        font-family: "Circular Std";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        /* 25.2px */
+    }
+}
+.tableFoure{
+    thead{
+        th{width: 50%;
+            color: #313131;
+            text-align: center;
+            font-family: "Circular Std";
+            font-size: 20px!important;
+            font-style: normal;
+            font-weight: 450!important;
+            line-height: normal;
+            text-align: left;
+            padding: 10px 25px 10px !important;
+        }
+    }
+    tbody{
+        td{
+            color: #313131;
+            font-family: "Circular Std";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: normal;
+            vertical-align: middle;
+            padding: 5px 25px 5px !important;font-weight: 450!important;
+
+        }
+        th{
+            font-size: 20px!important; vertical-align: middle;
+            padding: 5px 25px 5px !important;font-weight: 450!important;
+
+        }
+    }
+    .formfield {
+        border: 0;
+        padding: 0;
+        height: 36px;
+        color: #959494;
+        font-family: "Circular Std";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 36px;
+        &:focus {border-color:#fff;box-shadow: initial;border-radius: 0;}
+    }
+     
+}
+.tableThree{
+    margin-bottom: 30px!important;
+    thead{
+        th{
+            font-size: 20px!important;
+        }
+    }
+    tbody{
+        tr{
+            td{
+                 height: 64px;
+            }
+        }
+    }
+}
+.tableTwo{
+    margin-bottom: 30px!important;
+    thead{
+        tr{
+            th{ 
+                text-align: center;
+                font-family: "Circular Std";
+                font-size: 22px!important;
+                font-style: normal;
+                font-weight: 450!important;
+                line-height: normal;
+                width: 7%;
+                &:nth-child(2){
+                    text-align: left;
+                }   
+            }
+        }
+    }
+    tbody{
+        tr{
+            th { 
+                font-family: "Circular Std";
+                font-size: 18px!important;
+                font-style: normal;
+                font-weight: 450!important;
+                line-height: normal;    
+            }
+               td{ 
+                font-family: "Circular Std";
+                font-size: 20px!important;
+                font-style: normal;
+                font-weight: 450!important;
+                line-height: normal;    
+            }
+            th:first-child{
+                word-spacing: -4px;
+                min-width: 250px;
+            }
+        }
+    }
+}
+.tableOne{
+    thead{
+        tr{
+            th{ 
+                font-size: 20px!important; 
+                padding: 10px 0.5rem 11px!important;
+            }
+        }
+    }
+}
+ 
+
+.sacvvv {
+    width: 228px;
+height: 48px;
+flex-shrink: 0;
+border-radius: 10px;
+color: #FFF;
+text-align: center;
+font-family: 'nunito';
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 0.9px;
+background: #29BCC1;
+}
+.sacvvvDisabled {
+    width: 228px;
+height: 48px;
+flex-shrink: 0;
+border-radius: 10px;
+color: #FFF;
+text-align: center;
+font-family: 'nunito';
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 0.9px;
+background: #424242 !important;
+}
+
+.typeTextarea {
+    border: none;
+    outline: none;
+    padding-left: 12px;
+    width: 86px;
+    height: 24px;
+    color: var(--Neutral-10, #12161C);
+font-family: 'nunito';
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 22.018px; 
+letter-spacing: -0.32px;
+text-transform: capitalize;
+
+    &::placeholder {
+        color: var(--Neutral-10, #12161C);
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 22.018px; /* 137.612% */
+letter-spacing: -0.32px;
+text-transform: capitalize;
+    }
+}
+
+.wraperForm td {
+    border-top: 1px solid #959494;
+    border-bottom: 1px solid #959494;
+    // border-right: 1px solid #959494;
+} 
+
+.wraperForm td:last-child {
+    border-right-color: transparent;
+}
+
+
+.svinggg_dieter {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #F4F4F4 !important;
+    margin: 0 -20px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+.texint_add {
+    width: 100% !important;
+    padding-left: 0px !important;
+}
+
+.prrrrr {
+    color: #313131 !important;
+font-family: "Circular Std" !important;
+font-size: 20px !important;
+font-style: normal;
+font-weight: 450 !important;
+line-height: normal;
+}
+
+
+.lighttt {
+    color: var(--Neutral-10, #12161C) !important;
+font-family: 'nunito';
+font-size: 16px;
+font-style: normal;
+font-weight: 300 !important;
+line-height: 22.018px;
+letter-spacing: -0.32px;
+text-transform: capitalize;
+padding-left: 0px !important;
+}
+
+.peddd {
+    padding-left: 0px !important;
+    color: var(--Neutral-10, #12161C) !important;
+font-family: 'nunito' !important;
+font-size: 16px !important; 
+font-style: normal;
+font-weight: 300 !important;
+line-height: 22.018px; 
+letter-spacing: -0.32px;
+text-transform: capitalize;
+}
+
+.inpttt_te {
+    width: 100% !important;
+}
